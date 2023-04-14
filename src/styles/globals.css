@@ -25,3 +25,7 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.wrapper{
+  max-width: 1116px;
+}
