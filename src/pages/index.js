@@ -44,7 +44,7 @@ export default function Home() {
             high-quality work that exceeds client expectations.
           </p>
         </div>
-        <Canvas />
+        {/* <Canvas /> */}
         <Image
           className="absolute right-0 top-0"
           src="/young-freelancer.svg"
@@ -58,6 +58,33 @@ export default function Home() {
           </button>
         </div>
       </div>
+      <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
+      <div className="inline-flex items-center mt-8 flex-wrap">
+         <div>
+         <Image
+             
+             src="/my-pic.svg"
+             alt="my pic"
+             width={465}
+             height={370}
+           />
+         </div>
+            
+        
+          <div>
+            <p className=" max-w-xl font-semibold text-white ">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem. Veritatis
+            </p>
+            <button className=" flex-1 py-4 pl-4 pr-3 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold text-white mt-4">
+              Download CV
+            </button>
+          </div>
+        </div>
+  
     </main>
   );
 }
