@@ -112,6 +112,27 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      <div>
+        <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
+          Services
+        </h1>
+        <div className="flex flex-wrap gap-4 ">
+            <div className="ground-color p-4 text-center rounded-lg">
+              <h1 className="text-3xl mb-4">Web Development</h1>
+              <p className="max-w-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
+            </div>
+            <div className="ground-color p-4 text-center rounded-lg">
+              <h1 className="text-3xl mb-4">Video editing</h1>
+              <p className="max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
+            </div>
+            <div className="ground-color p-4 text-center rounded-lg">
+              <h1 className="text-3xl mb-4">Figma Web design</h1>
+              <p className="max-w-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
+            </div>
+
+        </div>
+      </div>
     </main>
   );
 }
