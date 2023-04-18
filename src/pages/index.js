@@ -58,19 +58,14 @@ export default function Home() {
           </button>
         </div>
       </div>
+      
+      <div>
       <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
-      <div className="inline-flex items-center mt-8 flex-wrap">
-         <div>
-         <Image
-             
-             src="/my-pic.svg"
-             alt="my pic"
-             width={465}
-             height={370}
-           />
-         </div>
-            
-        
+        <div className="inline-flex items-center mt-8 flex-wrap">
+          <div>
+            <Image src="/my-pic.svg" alt="my pic" width={465} height={370} />
+          </div>
+
           <div>
             <p className=" max-w-xl font-semibold text-white ">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -84,7 +79,39 @@ export default function Home() {
             </button>
           </div>
         </div>
-  
+      </div>
+
+      <div>
+        <h1 className="text-4xl font-semibold text-white mt-10 underline">
+          Projects
+        </h1>
+        <div className="flex flex-wrap mt-8">
+          <div>
+            <Image
+              src="/images/mobile.png"
+              alt="project-pic-item1"
+              width={465}
+              height={370}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/mobile.png"
+              alt="project-pic-item1"
+              width={465}
+              height={370}
+            />
+          </div>
+          <div>
+            <Image
+              src="/images/mobile.png"
+              alt="project-pic-item1"
+              width={450}
+              height={370}
+            />
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
