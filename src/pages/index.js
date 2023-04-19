@@ -14,7 +14,7 @@ export default function Home() {
             <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
           </div>
 
-          <div className="inline-flex space-x-32 items-center justify-end">
+          <div className="inline-flex space-x-32 items-center justify-end flex-wrap">
             <p className="text-xl text-white">Home</p>
             <p className="text-xl text-white">About</p>
             <p className="text-xl text-white">Services</p>
@@ -22,47 +22,41 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative" style={{ width: 1116, height: 407 }}>
+        <div className="flex flex-wrap gap-32 mt-40" >
           <div>
-            <p
-              className="absolute text-4xl font-semibold text-white"
-              style={{ left: 3, top: 101 }}
-            >
-              Hello
-            </p>
-            <p
-              className="absolute text-6xl font-bold text-white"
-              style={{ left: 3, top: 145 }}
-            >
+           <div>
+           <p className=" text-4xl font-semibold text-white mb-8">Hello</p>
+            <p className=" text-6xl font-bold text-white mb-4">
               I’m a web developer
             </p>
-            <p
-              className="absolute text-base font-semibold text-white"
-              style={{ width: 438, left: 0, top: 219 }}
-            >
+            <p className=" max-w-xl  text-base font-semibold text-white">
               with passion for creating responsive, user-friendly websites. With
               expertise in front-end and back-end development, I deliver
               high-quality work that exceeds client expectations.
             </p>
-          </div>
-          {/* <Canvas /> */}
-          <Image
-            className="absolute right-0 top-0"
-            src="/young-freelancer.svg"
-            alt="young freelancer programmer working on laptop"
-            width={419}
-            height={407}
-          />
-          <div className="w-40 h-14 absolute" style={{ left: 3, top: 304 }}>
-            <button className="flex items-center justify-center flex-1 h-full py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl">
-              <p className="text-2xl text-white">Hire me</p>
+           </div>
+           
+            <button className=" flex-1 mt-5  py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl text-white">
+              Hire me
             </button>
           </div>
+          {/* <Canvas /> */}
+          <div>
+            <Image
+              className=""
+              src="/young-freelancer.svg"
+              alt="young freelancer programmer working on laptop"
+              width={419}
+              height={407}
+            />
+          </div>
+
+         
         </div>
 
         <div>
           <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
-          <div className="inline-flex items-center mt-8 flex-wrap">
+          <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
               <Image src="/my-pic.svg" alt="my pic" width={465} height={370} />
             </div>
@@ -76,7 +70,7 @@ export default function Home() {
                 eaque rerum! Provident similique accusantium nemo autem.
                 Veritatis
               </p>
-              <button className=" flex-1 py-4 pl-4 pr-3 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold text-white mt-4">
+              <button className=" flex-1 py-3 pl-4 pr-4 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold text-white mt-4">
                 Download CV
               </button>
             </div>
@@ -92,24 +86,24 @@ export default function Home() {
               <Image
                 src="/images/mobile.png"
                 alt="project-pic-item1"
-                width={450}
-                height={370}
+                width={430}
+                height={350}
               />
             </div>
             <div>
               <Image
                 src="/images/mobile.png"
                 alt="project-pic-item1"
-                width={450}
-                height={370}
+                width={430}
+                height={350}
               />
             </div>
             <div>
               <Image
                 src="/images/mobile.png"
                 alt="project-pic-item1"
-                width={450}
-                height={370}
+                width={430}
+                height={350}
               />
             </div>
           </div>
@@ -153,7 +147,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
             SKILL SET
           </h1>
-          <div className="flex flex-wrap gap-72 justify-center">
+          <div className="flex flex-wrap gap-64 justify-center">
             <div>
               <h1 className="text-center mb-8 front-back-color">Frontend</h1>
               <Image
@@ -199,20 +193,29 @@ export default function Home() {
       </main>
 
       <footer className="mt-20">
+        <h1 className="text-center text-4xl font-semibold text-white mt-12 mb-10">Contact</h1>
         <div className="flex flex-wrap justify-around gap-4 mt-10 bg-blue-900 rounded-tl-3xl rounded-tr-3xl">
           <div className="mt-8">
             <p className="text-6xl font-bold text-white">Get in touch</p>
             <form>
               <div className="flex gap-4 mt-8">
-                <input className="rounded-md p-2 outline-none text-black" placeholder="Name..." required />
-                <input className="rounded-md p-2 outline-none text-black" placeholder="Email..." required />
+                <input
+                  className="rounded-md p-2 outline-none text-black"
+                  placeholder="Name..."
+                  required
+                />
+                <input
+                  className="rounded-md p-2 outline-none text-black"
+                  placeholder="Email..."
+                  required
+                />
               </div>
               <textarea
                 id="message"
                 className=" mt-4 p-2.5 w-full text-sm rounded-lg outline-none text-black"
                 placeholder="Your message..."
               ></textarea>
-              <button className=" button-color float-right p-2 pr-4 pl-4  rounded-lg font-semibold text-white ">
+              <button className=" button-color float-right p-2 pr-4 pl-4 mb-6 rounded-lg font-semibold text-white ">
                 Submit
               </button>
             </form>
