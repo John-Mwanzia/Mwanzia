@@ -58,9 +58,9 @@ export default function Home() {
           </button>
         </div>
       </div>
-      
+
       <div>
-      <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
+        <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
         <div className="inline-flex items-center mt-8 flex-wrap">
           <div>
             <Image src="/my-pic.svg" alt="my pic" width={465} height={370} />
@@ -82,15 +82,15 @@ export default function Home() {
       </div>
 
       <div>
-        <h1 className="text-4xl font-semibold text-white mt-10 underline">
+        <h1 className="text-4xl font-semibold text-white mt-10 mb-20 underline">
           Projects
         </h1>
-        <div className="flex flex-wrap mt-8">
+        <div className="flex flex-wrap mt-12">
           <div>
             <Image
               src="/images/mobile.png"
               alt="project-pic-item1"
-              width={465}
+              width={450}
               height={370}
             />
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
             <Image
               src="/images/mobile.png"
               alt="project-pic-item1"
-              width={465}
+              width={450}
               height={370}
             />
           </div>
@@ -113,24 +113,85 @@ export default function Home() {
         </div>
       </div>
 
-      <div>
+      <div className="mb-20">
         <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
           Services
         </h1>
         <div className="flex flex-wrap gap-4 ">
-            <div className="ground-color p-4 text-center rounded-lg">
-              <h1 className="text-3xl mb-4">Web Development</h1>
-              <p className="max-w-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
-            </div>
-            <div className="ground-color p-4 text-center rounded-lg">
-              <h1 className="text-3xl mb-4">Video editing</h1>
-              <p className="max-w-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
-            </div>
-            <div className="ground-color p-4 text-center rounded-lg">
-              <h1 className="text-3xl mb-4">Figma Web design</h1>
-              <p className="max-w-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum</p>
-            </div>
+          <div className="ground-color p-4 text-center rounded-lg">
+            <h1 className="text-3xl mb-4">Web Development</h1>
+            <p className="max-w-sm">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia,molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum
+            </p>
+          </div>
+          <div className="ground-color p-4 text-center rounded-lg">
+            <h1 className="text-3xl mb-4">Video editing</h1>
+            <p className="max-w-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia,molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum
+            </p>
+          </div>
+          <div className="ground-color p-4 text-center rounded-lg">
+            <h1 className="text-3xl mb-4">Figma Web design</h1>
+            <p className="max-w-sm">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia,molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum
+            </p>
+          </div>
+        </div>
+      </div>
 
+      <div className="mt-20">
+        <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
+          SKILL SET
+        </h1>
+        <div className="flex flex-wrap  gap-10">
+          <div>
+            <h1 className="text-center mb-8 front-back-color">Frontend</h1>
+            <Image
+              src="/skill-set.svg"
+              alt="skill set image"
+              width={578}
+              height={586}
+            />
+          </div>
+          <div>
+             <h1 className="text-center mb-10 front-back-color">Backend</h1>
+            <div className="flex flex-wrap gap-4 items-center">
+              <Image
+                src="/nodejs.svg"
+                alt="nodejs icon"
+                width={143}
+                height={132}
+              />
+              <h1>Nodejs</h1>
+            </div>
+            <div className="flex flex-wrap gap-4 items-center mt-8 ">
+              <Image
+                src="/mongodb.svg"
+                alt="nodejs icon"
+                width={143}
+                height={132}
+              />
+                    <h1>Mongodb</h1>
+            </div>
+            <div className="flex flex-wrap gap-4 items-center mt-8">
+              <Image
+                src="/mongoose-icon.svg"
+                alt="nodejs icon"
+                width={143}
+                height={132}
+              />
+              <h1>Mongoose</h1>
+            </div>
+          </div>
+          <div></div>
         </div>
       </div>
     </main>
