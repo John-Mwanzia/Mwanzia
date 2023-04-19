@@ -153,7 +153,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
             SKILL SET
           </h1>
-          <div className="flex flex-wrap  gap-10">
+          <div className="flex flex-wrap gap-72 justify-center">
             <div>
               <h1 className="text-center mb-8 front-back-color">Frontend</h1>
               <Image
