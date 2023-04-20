@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Canvas from "@/Components/Canvas";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +16,15 @@ export default function Home() {
           </div>
 
           <div className="inline-flex space-x-32 items-center justify-end flex-wrap">
-            <p className="text-xl text-white">Home</p>
-            <p className="text-xl text-white">About</p>
-            <p className="text-xl text-white">Services</p>
-            <p className="text-xl text-white">Contact</p>
+          <Link href=""> <p className="text-xl text-white">Home</p></Link>
+          <Link href=""> <p className="text-xl text-white">About</p></Link>
+          <Link href="">  <p className="text-xl text-white">Services</p></Link>
+          <Link href=""><p className="text-xl text-white">Contact</p></Link>
+
+           
+           
+          
+    
           </div>
         </div>
 
