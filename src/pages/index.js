@@ -3,30 +3,65 @@ import { Inter } from "next/font/google";
 import Canvas from "@/Components/Canvas";
 import Link from "next/link";
 import Footer from "@/Components/Footer";
+import { Navbar, Text } from "@nextui-org/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const collapseItems = [
+    "Home",
+    "About",
+    "Services",
+    "Contact",
+  ];
   return (
     <>
       <main className="flex min-h-screen flex-col items-center  ">
-        <div className=" wrapper inline-flex  items-center justify-between w-full mt-7 mb-8 ">
+        <div className="  inline-flex  items-center justify-between w-full mt-7 mb-8 ">
+        <Navbar isBordered variant="sticky">
+        <Navbar.Toggle showIn="xs" />
+        <Navbar.Brand
+         
+        >
+        
+          <Text b color="inherit" >
           <div className="flex space-x-4">
             <p className="text-4xl font-bold text-yellow-600">John</p>
             <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
           </div>
-
-          <div className="inline-flex space-x-32 items-center justify-end flex-wrap">
-          <Link href=""> <p className="text-xl ">Home</p></Link>
-          <Link href=""> <p className="text-xl ">About</p></Link>
-          <Link href="">  <p className="text-xl ">Services</p></Link>
-          <Link href=""><p className="text-xl ">Contact</p></Link>
-
-           
-           
-          
-    
-          </div>
+          </Text>
+        </Navbar.Brand>
+      
+        <Navbar.Content
+          hideIn="xs"
+          className="inline-flex space-x-24 items-center justify-end flex-wrap"
+        >
+          <Navbar.Link href="#" className="text-xl">Home</Navbar.Link>
+          <Navbar.Link href="#" className="text-xl">About</Navbar.Link>
+          <Navbar.Link href="#" className="text-xl">Services</Navbar.Link>
+          <Navbar.Link href="#" className="text-xl">Contact</Navbar.Link>
+        </Navbar.Content>
+        
+     
+        
+        <Navbar.Collapse>
+          {collapseItems.map((item, index) => (
+            <Navbar.CollapseItem
+              key={item}
+            >
+              <Link
+                color="inherit"
+                css={{
+                  minWidth: "100%",
+                }}
+                href="#"
+              >
+                {item}
+              </Link>
+            </Navbar.CollapseItem>
+          ))}
+        </Navbar.Collapse>
+      </Navbar>
         </div>
 
         <div className="flex flex-wrap gap-32 mt-40" >
