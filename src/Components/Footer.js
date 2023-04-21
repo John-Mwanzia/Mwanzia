@@ -5,14 +5,14 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <h1 className="text-center text-4xl font-semibold text-white mt-12 mb-10">
+      <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
         Contact
       </h1>
       <div className="flex flex-wrap justify-around gap-4 mt-10 bg-blue-900 rounded-tl-3xl rounded-tr-3xl">
         <div className="mt-8">
-          <p className="text-6xl font-bold text-white">Get in touch</p>
+          <p className="text-6xl font-bold ">Get in touch</p>
           <form>
-            <div className="flex gap-4 mt-8">
+            <div className="flex flex-wrap gap-4 mt-8">
               <input
                 className="rounded-md p-2 outline-none text-black"
                 placeholder="Name..."
@@ -29,7 +29,7 @@ export default function Footer() {
               className=" mt-4 p-2.5 w-full text-sm rounded-lg outline-none text-black"
               placeholder="Your message..."
             ></textarea>
-            <button className=" button-color float-right p-2 pr-4 pl-4 mb-6 rounded-lg font-semibold text-white ">
+            <button className=" button-color float-right p-2 pr-4 pl-4 mb-6 rounded-lg font-semibold  ">
               Submit
             </button>
           </form>
@@ -45,7 +45,7 @@ export default function Footer() {
             <h2>Phone No : </h2> <h3> 0707979247</h3>
           </div>
         </div>
-        <div className="mt-8">
+        <div className="flex flex-row gap-4 justify-around sm:flex-col   mt-8">
           <Link href="https://github.com/John-Mwanzia">
             <Image
               src="/github-icon.svg"

@@ -17,10 +17,10 @@ export default function Home() {
           </div>
 
           <div className="inline-flex space-x-32 items-center justify-end flex-wrap">
-          <Link href=""> <p className="text-xl text-white">Home</p></Link>
-          <Link href=""> <p className="text-xl text-white">About</p></Link>
-          <Link href="">  <p className="text-xl text-white">Services</p></Link>
-          <Link href=""><p className="text-xl text-white">Contact</p></Link>
+          <Link href=""> <p className="text-xl ">Home</p></Link>
+          <Link href=""> <p className="text-xl ">About</p></Link>
+          <Link href="">  <p className="text-xl ">Services</p></Link>
+          <Link href=""><p className="text-xl ">Contact</p></Link>
 
            
            
@@ -32,18 +32,18 @@ export default function Home() {
         <div className="flex flex-wrap gap-32 mt-40" >
           <div>
            <div>
-           <p className=" text-4xl font-semibold text-white mb-8">Hello</p>
-            <p className=" text-6xl font-bold text-white mb-4">
+           <p className=" text-4xl font-semibold  mb-8">Hello</p>
+            <p className=" text-6xl font-bold mb-4">
               I’m a web developer
             </p>
-            <p className=" max-w-xl  text-base font-semibold text-white">
+            <p className=" max-w-xl  text-base font-semibold ">
               with passion for creating responsive, user-friendly websites. With
               expertise in front-end and back-end development, I deliver
               high-quality work that exceeds client expectations.
             </p>
            </div>
            
-            <button className=" flex-1 mt-5  py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl text-white">
+            <button className=" flex-1 mt-5  py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl ">
               Hire me
             </button>
           </div>
@@ -62,14 +62,14 @@ export default function Home() {
         </div>
 
         <div>
-          <p className=" text-4xl font-semibold text-white mt-8">About Me</p>
+          <p className=" text-4xl font-semibold  mt-8">About Me</p>
           <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
               <Image src="/my-pic.svg" alt="my pic" width={465} height={370} />
             </div>
 
             <div>
-              <p className=" max-w-xl font-semibold text-white ">
+              <p className=" max-w-xl font-semibold  ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
@@ -77,7 +77,7 @@ export default function Home() {
                 eaque rerum! Provident similique accusantium nemo autem.
                 Veritatis
               </p>
-              <button className=" flex-1 py-3 pl-4 pr-4 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold text-white mt-4">
+              <button className=" flex-1 py-3 pl-4 pr-4 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold mt-4">
                 Download CV
               </button>
             </div>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         <div>
-          <h1 className="text-4xl font-semibold text-white mt-10 mb-20 underline">
+          <h1 className="text-4xl font-semibold mt-10 mb-20 underline">
             Projects
           </h1>
           <div className="flex flex-wrap mt-12">
@@ -117,7 +117,7 @@ export default function Home() {
         </div>
 
         <div className="mb-20">
-          <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
+          <h1 className="text-4xl font-semibold mt-12 mb-10 ">
             Services
           </h1>
           <div className="flex flex-wrap gap-4 ">
@@ -151,7 +151,7 @@ export default function Home() {
         </div>
 
         <div className="mt-20">
-          <h1 className="text-4xl font-semibold text-white mt-12 mb-10 ">
+          <h1 className="text-4xl font-semibold mt-12 mb-10 ">
             SKILL SET
           </h1>
           <div className="flex flex-wrap gap-64 justify-center">
