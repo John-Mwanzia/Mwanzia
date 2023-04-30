@@ -62,12 +62,12 @@ export default function Home() {
         </Navbar.Collapse>
       </Navbar>
         </div>
-
+{/* Hero section */}
         <div className="flex flex-wrap gap-32 mt-40" >
           <div>
            <div>
            <p className=" text-4xl font-semibold  mb-8">Hello</p>
-            <p className=" text-6xl font-bold mb-4">
+            <p className=" text-6xl  font-bold mb-4">
               I’m a web developer
             </p>
             <p className=" max-w-xl  text-base font-semibold ">
@@ -207,7 +207,7 @@ export default function Home() {
                   width={143}
                   height={132}
                 />
-                <h1>Nodejs</h1>
+                <h2>Nodejs</h2>
               </div>
               <div className="flex flex-wrap gap-4 items-center mt-8 ">
                 <Image
@@ -216,7 +216,7 @@ export default function Home() {
                   width={143}
                   height={132}
                 />
-                <h1>Mongodb</h1>
+                <h2>Mongodb</h2>
               </div>
               <div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
@@ -225,7 +225,7 @@ export default function Home() {
                   width={143}
                   height={132}
                 />
-                <h1>Mongoose</h1>
+                <h2>Mongoose</h2>
               </div>
             </div>
             <div></div>
