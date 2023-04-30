@@ -14,8 +14,10 @@ export default function Home() {
     "Contact",
   ];
   return (
-    <>
+    <> 
+   
       <main className="flex min-h-screen flex-col items-center  ">
+      <Canvas />
         <div className="  inline-flex  items-center justify-between w-full mt-7 mb-8 ">
         <Navbar isBordered variant="sticky">
         <Navbar.Toggle showIn="xs" />
@@ -31,9 +33,9 @@ export default function Home() {
           </Text>
         </Navbar.Brand>
       
-        <Navbar.Content
+        <Navbar.Content 
           hideIn="xs"
-          className="inline-flex space-x-24 items-center justify-end flex-wrap"
+          className="inline-flex space-x-24 items-center justify-end flex-wrap "
         >
           <Navbar.Link href="#" className="text-xl">Home</Navbar.Link>
           <Navbar.Link href="#" className="text-xl">About</Navbar.Link>
@@ -63,7 +65,7 @@ export default function Home() {
       </Navbar>
         </div>
 {/* Hero section */}
-        <div className="flex flex-wrap gap-32 mt-40" >
+        <div className="flex flex-wrap gap-32 mt-40 ">
           <div>
            <div>
            <p className=" text-4xl font-semibold  mb-8">Hello</p>
@@ -81,7 +83,7 @@ export default function Home() {
               Hire me
             </button>
           </div>
-          {/* <Canvas /> */}
+          
           <div>
             <Image
               className=""

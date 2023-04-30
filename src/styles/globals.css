@@ -2,21 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
   
   }
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
     padding: 0;
     margin: 0;
     height: 100vh;
@@ -24,18 +24,15 @@ body {
 #canvas {
 	position: fixed;
 	left: 0;
-  right: 0;
-  margin : auto;
-	/* width: 50%;
-	height: 400px; */
-  z-index: 1;
-  background-color: blueviolet;
-
+	top: 0;
+	width: 100%;
+	height: 100%;
+  z-index: -1;
 }
 
-.wrapper{
+/* .wrapper{
   max-width: 1116px;
-}
+} */
 .ground-color{
   background-color: #0C124B;
 }
@@ -46,4 +43,4 @@ body {
 .button-color{
   background-color: #C35042;
   
-}
+} 
