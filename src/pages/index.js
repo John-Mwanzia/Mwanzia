@@ -19,7 +19,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center  ">
       <Canvas />
         <div className="  inline-flex  items-center justify-between w-full mt-7 mb-8 ">
-        <Navbar isBordered variant="sticky">
+        <Navbar isBordered>
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
          
@@ -87,7 +87,7 @@ export default function Home() {
           <div>
             <Image
               className=""
-              src="/young-freelancer.svg"
+              src="/images/young-freelancer.png"
               alt="young freelancer programmer working on laptop"
               width={419}
               height={407}
@@ -101,7 +101,7 @@ export default function Home() {
           <p className=" text-4xl font-semibold  mt-8">About Me</p>
           <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
-              <Image src="/my-pic.svg" alt="my pic" width={465} height={370} />
+              <Image src="/images/mypic.png" alt="my pic" width={465} height={370} />
             </div>
 
             <div>
