@@ -19,7 +19,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center  ">
       <Canvas />
         <div className="  inline-flex  items-center justify-between w-full mt-7 mb-8 ">
-        <Navbar isBordered>
+        <Navbar isBordered className="relative">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
          
@@ -65,7 +65,7 @@ export default function Home() {
       </Navbar>
         </div>
 {/* Hero section */}
-        <div className="flex flex-wrap gap-32 mt-40 ">
+        <div className="flex flex-wrap gap-32 mt-40  relative bg-transparent">
           <div>
            <div>
            <p className=" text-4xl font-semibold  mb-8">Hello</p>
@@ -86,7 +86,7 @@ export default function Home() {
           
           <div>
             <Image
-              className=""
+            
               src="/images/young-freelancer.png"
               alt="young freelancer programmer working on laptop"
               width={419}
