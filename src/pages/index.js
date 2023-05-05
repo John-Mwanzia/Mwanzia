@@ -24,7 +24,7 @@ export default function Home() {
             <Navbar.Toggle showIn="xs" />
             <Navbar.Brand>
               <Text b color="inherit">
-                <div className="flex space-x-4">
+                <div className="flex space-x-4" data-aos="fade-down" data-aos-delay="300" >
                   <p className="text-4xl font-bold text-yellow-600">John</p>
                   <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
                 </div>
@@ -35,16 +35,16 @@ export default function Home() {
               hideIn="xs"
               className="inline-flex space-x-24 items-center justify-end flex-wrap "
             >
-              <Navbar.Link href="#" className="text-xl">
+              <Navbar.Link href="#" data-aos-delay="400"  data-aos="fade-down" className="text-xl">
                 Home
               </Navbar.Link>
-              <Navbar.Link href="#" className="text-xl">
+              <Navbar.Link href="#" data-aos-delay="500"  data-aos="fade-down" className="text-xl">
                 About
               </Navbar.Link>
-              <Navbar.Link href="#" className="text-xl">
+              <Navbar.Link href="#" data-aos-delay="600"  data-aos="fade-down" className="text-xl">
                 Services
               </Navbar.Link>
-              <Navbar.Link href="#" className="text-xl">
+              <Navbar.Link href="#" data-aos-delay="700"  data-aos="fade-down" className="text-xl">
                 Contact
               </Navbar.Link>
             </Navbar.Content>
