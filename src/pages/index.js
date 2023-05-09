@@ -38,13 +38,13 @@ export default function Home() {
               <Navbar.Link href="#" data-aos-delay="400"  data-aos="fade-down" className="text-xl">
                 Home
               </Navbar.Link>
-              <Navbar.Link href="#" data-aos-delay="500"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link href="#About" data-aos-delay="500"  data-aos="fade-down" className="text-xl">
                 About
               </Navbar.Link>
-              <Navbar.Link href="#" data-aos-delay="600"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link href="#Services" data-aos-delay="600"  data-aos="fade-down" className="text-xl">
                 Services
               </Navbar.Link>
-              <Navbar.Link href="#" data-aos-delay="700"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link href="#Contact" data-aos-delay="700"  data-aos="fade-down" className="text-xl">
                 Contact
               </Navbar.Link>
             </Navbar.Content>
@@ -94,7 +94,7 @@ export default function Home() {
           </div>
         </div>
         {/* About section */}
-        <div data-aos="fade-right">
+        <div data-aos="fade-right" id="About">
           <p className=" text-4xl font-semibold  mt-8">About Me</p>
           <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
         </div>
         {/* Service section */}
-        <div data-aos="fade-up" className="mb-20">
+        <div data-aos="fade-up" className="mb-20" id="Services">
           <h1 className="text-4xl font-semibold mt-12 mb-10 ">Services</h1>
           <div className="flex flex-wrap gap-4 ">
             <div data-aos="flip-left" className="ground-color p-4 text-center rounded-lg">
@@ -242,7 +242,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer data-aos = "fade-up" className="mt-20">
+      <footer data-aos = "fade-up" className="mt-20" id="Contact">
         <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
           Contact
         </h1>
