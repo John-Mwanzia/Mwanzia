@@ -115,7 +115,7 @@ export default function Home() {
               </Navbar.Link>
             </Navbar.Content>
 
-            <Navbar.Collapse>
+            <Navbar.Collapse className="mt-4">
               {collapseItems.map((item, index) => (
                 <Navbar.CollapseItem key={item.Href}>
                   <Link
