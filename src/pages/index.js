@@ -11,7 +11,28 @@ import { animateScroll } from "react-scroll";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const collapseItems = ["Home", "About", "Services", "Contact"];
+  const collapseItems = [
+    {
+     name: "Home",
+     Href: "#Home",
+      id: "Home"
+    },
+    { 
+     name: "About" ,
+     Href: "#About",
+     id: "About"
+    },
+    { 
+      name: " Services" ,
+      Href: "#Services",
+      id: "Services"
+    },
+    { 
+      name: "Contact" ,
+      Href: "#Contact",
+      id: "Contact"
+    },
+  ];
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -46,8 +67,10 @@ export default function Home() {
                 data-aos="fade-down"
                 className="text-xl"
                 onClick={() => {
-              animateScroll.scrollTo(document.getElementById('Home').offsetTop);
-            }}
+                  animateScroll.scrollTo(
+                    document.getElementById("Home").offsetTop
+                  );
+                }}
               >
                 Home
               </Navbar.Link>
@@ -57,9 +80,10 @@ export default function Home() {
                 data-aos="fade-down"
                 className="text-xl"
                 onClick={() => {
-              animateScroll.scrollTo(document.getElementById('About').offsetTop);
-            }}
-            
+                  animateScroll.scrollTo(
+                    document.getElementById("About").offsetTop
+                  );
+                }}
               >
                 About
               </Navbar.Link>
@@ -69,8 +93,10 @@ export default function Home() {
                 data-aos="fade-down"
                 className="text-xl"
                 onClick={() => {
-              animateScroll.scrollTo(document.getElementById('Services').offsetTop);
-            }}
+                  animateScroll.scrollTo(
+                    document.getElementById("Services").offsetTop
+                  );
+                }}
               >
                 Services
               </Navbar.Link>
@@ -80,8 +106,10 @@ export default function Home() {
                 data-aos="fade-down"
                 className="text-xl"
                 onClick={() => {
-              animateScroll.scrollTo(document.getElementById('Contact').offsetTop);
-            }}
+                  animateScroll.scrollTo(
+                    document.getElementById("Contact").offsetTop
+                  );
+                }}
               >
                 Contact
               </Navbar.Link>
@@ -89,15 +117,20 @@ export default function Home() {
 
             <Navbar.Collapse>
               {collapseItems.map((item, index) => (
-                <Navbar.CollapseItem key={item}>
+                <Navbar.CollapseItem key={item.Href}>
                   <Link
                     color="inherit"
                     css={{
                       minWidth: "100%",
                     }}
-                    href="#"
+                    href={item.Href}
+                    onClick={() => {
+                  animateScroll.scrollTo(
+                    document.getElementById(`${item.id}`).offsetTop
+                  );
+                }}
                   >
-                    {item}
+                    {item.name}
                   </Link>
                 </Navbar.CollapseItem>
               ))}
@@ -105,7 +138,10 @@ export default function Home() {
           </Navbar>
         </div>
         {/* Hero section */}
-        <div className="flex flex-wrap gap-32 mt-40  relative bg-transparent" id="Home">
+        <div
+          className="flex flex-wrap gap-32 mt-40  relative bg-transparent"
+          id="Home"
+        >
           <div data-aos="flip-right">
             <div>
               <p className=" text-4xl font-semibold  mb-8">Hello</p>
@@ -133,7 +169,9 @@ export default function Home() {
         </div>
         {/* About section */}
         <div data-aos="fade-right" id="About">
-          <p className=" text-4xl font-semibold  mt-8">About Me</p>
+          <p className=" text-4xl font-semibold  mt-8 sm:text-center">
+            About Me
+          </p>
           <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
               <Image
