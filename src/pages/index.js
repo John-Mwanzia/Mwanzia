@@ -6,6 +6,7 @@ import { Navbar, Text } from "@nextui-org/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { animateScroll } from "react-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,11 @@ export default function Home() {
             <Navbar.Toggle showIn="xs" />
             <Navbar.Brand>
               <Text b color="inherit">
-                <div className="flex space-x-4" data-aos="fade-down" data-aos-delay="300" >
+                <div
+                  className="flex space-x-4"
+                  data-aos="fade-down"
+                  data-aos-delay="300"
+                >
                   <p className="text-4xl font-bold text-yellow-600">John</p>
                   <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
                 </div>
@@ -35,16 +40,49 @@ export default function Home() {
               hideIn="xs"
               className="inline-flex space-x-24 items-center justify-end flex-wrap "
             >
-              <Navbar.Link href="#" data-aos-delay="400"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link
+                href="#Home"
+                data-aos-delay="400"
+                data-aos="fade-down"
+                className="text-xl"
+                onClick={() => {
+              animateScroll.scrollTo(document.getElementById('Home').offsetTop);
+            }}
+              >
                 Home
               </Navbar.Link>
-              <Navbar.Link href="#About" data-aos-delay="500"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link
+                href="#About"
+                data-aos-delay="500"
+                data-aos="fade-down"
+                className="text-xl"
+                onClick={() => {
+              animateScroll.scrollTo(document.getElementById('About').offsetTop);
+            }}
+            
+              >
                 About
               </Navbar.Link>
-              <Navbar.Link href="#Services" data-aos-delay="600"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link
+                href="#Services"
+                data-aos-delay="600"
+                data-aos="fade-down"
+                className="text-xl"
+                onClick={() => {
+              animateScroll.scrollTo(document.getElementById('Services').offsetTop);
+            }}
+              >
                 Services
               </Navbar.Link>
-              <Navbar.Link href="#Contact" data-aos-delay="700"  data-aos="fade-down" className="text-xl">
+              <Navbar.Link
+                href="#Contact"
+                data-aos-delay="700"
+                data-aos="fade-down"
+                className="text-xl"
+                onClick={() => {
+              animateScroll.scrollTo(document.getElementById('Contact').offsetTop);
+            }}
+              >
                 Contact
               </Navbar.Link>
             </Navbar.Content>
@@ -67,7 +105,7 @@ export default function Home() {
           </Navbar>
         </div>
         {/* Hero section */}
-        <div className="flex flex-wrap gap-32 mt-40  relative bg-transparent">
+        <div className="flex flex-wrap gap-32 mt-40  relative bg-transparent" id="Home">
           <div data-aos="flip-right">
             <div>
               <p className=" text-4xl font-semibold  mb-8">Hello</p>
@@ -99,7 +137,7 @@ export default function Home() {
           <div className="flex items-center mt-8 flex-wrap gap-28">
             <div>
               <Image
-              data-aos = "zoom-in-right"
+                data-aos="zoom-in-right"
                 src="/images/mypic.png"
                 alt="my pic"
                 width={465}
@@ -130,7 +168,7 @@ export default function Home() {
           <div className="flex flex-wrap mt-12">
             <div>
               <Image
-              data-aos="zoom-in-left"
+                data-aos="zoom-in-left"
                 src="/images/mobile.png"
                 alt="project-pic-item1"
                 width={430}
@@ -139,7 +177,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-               data-aos="zoom-in-left"
+                data-aos="zoom-in-left"
                 src="/images/mobile.png"
                 alt="project-pic-item1"
                 width={430}
@@ -148,7 +186,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-               data-aos="zoom-in-left"
+                data-aos="zoom-in-left"
                 src="/images/mobile.png"
                 alt="project-pic-item1"
                 width={430}
@@ -161,7 +199,10 @@ export default function Home() {
         <div data-aos="fade-up" className="mb-20" id="Services">
           <h1 className="text-4xl font-semibold mt-12 mb-10 ">Services</h1>
           <div className="flex flex-wrap gap-4 ">
-            <div data-aos="flip-left" className="ground-color p-4 text-center rounded-lg">
+            <div
+              data-aos="flip-left"
+              className="ground-color p-4 text-center rounded-lg"
+            >
               <h1 className="text-3xl mb-4">Web Development</h1>
               <p className="max-w-sm">
                 {" "}
@@ -170,7 +211,10 @@ export default function Home() {
                 consequuntur voluptatum laborum
               </p>
             </div>
-            <div data-aos="flip-left" className="ground-color p-4 text-center rounded-lg">
+            <div
+              data-aos="flip-left"
+              className="ground-color p-4 text-center rounded-lg"
+            >
               <h1 className="text-3xl mb-4">Video editing</h1>
               <p className="max-w-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
@@ -178,7 +222,10 @@ export default function Home() {
                 consequuntur voluptatum laborum
               </p>
             </div>
-            <div data-aos="flip-left" className="ground-color p-4 text-center rounded-lg">
+            <div
+              data-aos="flip-left"
+              className="ground-color p-4 text-center rounded-lg"
+            >
               <h1 className="text-3xl mb-4">Figma Web design</h1>
               <p className="max-w-sm">
                 {" "}
@@ -242,7 +289,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer data-aos = "fade-up" className="mt-20" id="Contact">
+      <footer data-aos="fade-up" className="mt-20" id="Contact">
         <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
           Contact
         </h1>
