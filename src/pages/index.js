@@ -160,7 +160,7 @@ export default function Home() {
 
           <div data-aos="fade-up">
             <Image
-              src="/images/young-freelancer.png"
+              src="/images/freelancer.png"
               alt="young freelancer programmer working on laptop"
               width={419}
               height={407}
