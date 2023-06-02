@@ -205,6 +205,7 @@ export default function Home() {
           </h1>
           <div className="flex flex-wrap mt-12">
             <div>
+              <Link href="https://smart-tech-stores.vercel.app/">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/mobile.png"
@@ -212,8 +213,10 @@ export default function Home() {
                 width={430}
                 height={350}
               />
+              </Link>
             </div>
             <div>
+            <Link href="https://smart-tech-stores.vercel.app/">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/mobile.png"
@@ -221,8 +224,10 @@ export default function Home() {
                 width={430}
                 height={350}
               />
+              </Link>
             </div>
             <div>
+            <Link href="https://smart-tech-stores.vercel.app/">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/mobile.png"
@@ -230,6 +235,7 @@ export default function Home() {
                 width={430}
                 height={350}
               />
+              </Link>
             </div>
           </div>
         </div>
