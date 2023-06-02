@@ -139,7 +139,7 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-32 mt-40  relative bg-transparent"
+          className="flex flex-wrap gap-48 mt-40  relative bg-transparent"
           id="Home"
         >
           <div data-aos="flip-right">
@@ -169,10 +169,10 @@ export default function Home() {
         </div>
         {/* About section */}
         <div data-aos="fade-right" id="About">
-          <p className=" text-4xl font-semibold  mt-8 sm:text-center">
+          <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
             About Me
-          </p>
-          <div className="flex items-center mt-8 flex-wrap gap-28">
+          </h1>
+          <div className="flex items-center mt-8 flex-wrap gap-28 lg:gap-48">
             <div>
               <Image
                 data-aos="zoom-in-right"
@@ -184,7 +184,7 @@ export default function Home() {
             </div>
 
             <div>
-              <p className=" max-w-xl font-semibold  ">
+              <p className=" max-w-xl font-semibold px-4 lg:px-0 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
@@ -192,7 +192,7 @@ export default function Home() {
                 eaque rerum! Provident similique accusantium nemo autem.
                 Veritatis
               </p>
-              <button className=" flex-1 py-3 pl-4 pr-4 border-2 rounded-3xl border-indigo-900 text-2xl font-semibold mt-4">
+              <button className=" flex-1 py-3 pl-4 pr-4 border-2 ml-4 lg:ml-0 rounded-3xl border-indigo-900 text-2xl font-semibold mt-4">
                 Download CV
               </button>
             </div>
@@ -200,7 +200,7 @@ export default function Home() {
         </div>
         {/* Project section */}
         <div data-aos="fade-up">
-          <h1 className="text-4xl font-semibold mt-10 mb-20 underline decoration-sky-500">
+          <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
             Projects
           </h1>
           <div className="flex flex-wrap mt-12 gap-6  lg:gap-0">
@@ -282,8 +282,8 @@ export default function Home() {
         </div>
         {/* Skill section */}
         <div data-aos="fade-down" className=" mt-8 lg:mt-16">
-          <h1 className="text-4xl font-semibold mt-8 mb-10 underline decoration-sky-500">SKILL SET</h1>
-          <div className="flex flex-wrap gap-20 lg:gap-64 justify-center">
+          <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">SKILL SET</h1>
+          <div className="flex flex-wrap gap-20 lg:gap-48 justify-center">
             <div>
               <h1 className="text-center mb-8 front-back-color">Frontend</h1>
               <Image
