@@ -203,7 +203,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold mt-10 mb-20 underline">
             Projects
           </h1>
-          <div className="flex flex-wrap mt-12">
+          <div className="flex flex-wrap mt-12 gap-6  lg:gap-0">
             <div>
               <Link href="https://smart-tech-stores.vercel.app/">
                 <Image
@@ -281,9 +281,9 @@ export default function Home() {
           </div>
         </div>
         {/* Skill section */}
-        <div data-aos="fade-down" className="mt-20">
-          <h1 className="text-4xl font-semibold mt-12 mb-10 ">SKILL SET</h1>
-          <div className="flex flex-wrap gap-64 justify-center">
+        <div data-aos="fade-down" className=" mt-8 lg:mt-20">
+          <h1 className="text-4xl font-semibold mt-8 mb-10 ">SKILL SET</h1>
+          <div className="flex flex-wrap gap-20 lg:gap-64 justify-center">
             <div>
               <h1 className="text-center mb-8 front-back-color">Frontend</h1>
               <Image
