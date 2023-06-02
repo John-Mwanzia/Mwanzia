@@ -337,8 +337,8 @@ export default function Home() {
         <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
           Contact
         </h1>
-        <div className="flex flex-wrap justify-around gap-4 mt-10 bg-blue-900 rounded-tl-3xl rounded-tr-3xl">
-          <div className="mt-8">
+        <div className="flex flex-wrap justify-around pb-8 gap-4 mt-10 bg-blue-900 rounded-tl-3xl rounded-tr-3xl">
+          <div className="mt-8 px-4">
             <p className="text-6xl font-bold ">Get in touch</p>
             <form>
               <div className="flex flex-wrap gap-4 mt-8">
