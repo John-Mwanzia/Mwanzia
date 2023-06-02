@@ -139,21 +139,21 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-48 mt-40  relative bg-transparent"
+          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40  relative bg-transparent"
           id="Home"
         >
           <div data-aos="flip-right">
             <div>
-              <p className=" text-4xl font-semibold  mb-8">Hello</p>
-              <p className=" text-6xl  font-bold mb-4">I’m a web developer</p>
-              <p className=" max-w-xl  text-base font-semibold ">
+              <p className=" text-4xl px-4  font-semibold  mb-8">Hello</p>
+              <p className=" text-5xl lg:text-6xl px-4  font-bold mb-4">I’m a web developer</p>
+              <p className=" max-w-xl  text-base font-semibold px-4 ">
                 with passion for creating responsive, user-friendly websites.
                 With expertise in front-end and back-end development, I deliver
                 high-quality work that exceeds client expectations.
               </p>
             </div>
 
-            <button className=" flex-1 mt-5  py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl ">
+            <button className=" flex-1 mt-5 ml-4 py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl ">
               Hire me
             </button>
           </div>
@@ -285,7 +285,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">SKILL SET</h1>
           <div className="flex flex-wrap gap-20 lg:gap-48 justify-center">
             <div>
-              <h1 className="text-center mb-8 front-back-color">Frontend</h1>
+              <h1 className="text-center text-4xl lg:text-5xl mb-8 front-back-color">Frontend</h1>
               <Image
                 data-aos="zoom-in-left"
                 data-aos-delay="300"
@@ -296,7 +296,7 @@ export default function Home() {
               />
             </div>
             <div>
-              <h1 className="text-center mb-10 front-back-color">Backend</h1>
+              <h1 className="text-center mb-10 text-4xl lg:text-5xl front-back-color">Backend</h1>
               <div className="flex flex-wrap gap-4 items-center">
                 <Image
                   data-aos="zoom-in-left"
