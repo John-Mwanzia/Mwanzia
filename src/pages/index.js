@@ -13,24 +13,24 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const collapseItems = [
     {
-     name: "Home",
-     Href: "#Home",
-      id: "Home"
+      name: "Home",
+      Href: "#Home",
+      id: "Home",
     },
-    { 
-     name: "About" ,
-     Href: "#About",
-     id: "About"
+    {
+      name: "About",
+      Href: "#About",
+      id: "About",
     },
-    { 
-      name: " Services" ,
+    {
+      name: " Services",
       Href: "#Services",
-      id: "Services"
+      id: "Services",
     },
-    { 
-      name: "Contact" ,
+    {
+      name: "Contact",
       Href: "#Contact",
-      id: "Contact"
+      id: "Contact",
     },
   ];
 
@@ -125,10 +125,10 @@ export default function Home() {
                     }}
                     href={item.Href}
                     onClick={() => {
-                  animateScroll.scrollTo(
-                    document.getElementById(`${item.id}`).offsetTop
-                  );
-                }}
+                      animateScroll.scrollTo(
+                        document.getElementById(`${item.id}`).offsetTop
+                      );
+                    }}
                   >
                     {item.name}
                   </Link>
@@ -206,35 +206,35 @@ export default function Home() {
           <div className="flex flex-wrap mt-12">
             <div>
               <Link href="https://smart-tech-stores.vercel.app/">
-              <Image
-                data-aos="zoom-in-left"
-                src="/images/mobile.png"
-                alt="project-pic-item1"
-                width={430}
-                height={350}
-              />
+                <Image
+                  data-aos="zoom-in-left"
+                  src="/images/mobile.png"
+                  alt="project-pic-item1"
+                  width={430}
+                  height={350}
+                />
               </Link>
             </div>
             <div>
-            <Link href="https://smart-tech-stores.vercel.app/">
-              <Image
-                data-aos="zoom-in-left"
-                src="/images/mobile.png"
-                alt="project-pic-item1"
-                width={430}
-                height={350}
-              />
+              <Link href="https://smart-tech-stores.vercel.app/">
+                <Image
+                  data-aos="zoom-in-left"
+                  src="/images/mobile.png"
+                  alt="project-pic-item1"
+                  width={430}
+                  height={350}
+                />
               </Link>
             </div>
             <div>
-            <Link href="https://smart-tech-stores.vercel.app/">
-              <Image
-                data-aos="zoom-in-left"
-                src="/images/mobile.png"
-                alt="project-pic-item1"
-                width={430}
-                height={350}
-              />
+              <Link href="https://smart-tech-stores.vercel.app/">
+                <Image
+                  data-aos="zoom-in-left"
+                  src="/images/mobile.png"
+                  alt="project-pic-item1"
+                  width={430}
+                  height={350}
+                />
               </Link>
             </div>
           </div>
