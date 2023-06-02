@@ -200,7 +200,7 @@ export default function Home() {
         </div>
         {/* Project section */}
         <div data-aos="fade-up">
-          <h1 className="text-4xl font-semibold mt-10 mb-20 underline">
+          <h1 className="text-4xl font-semibold mt-10 mb-20 underline decoration-sky-500">
             Projects
           </h1>
           <div className="flex flex-wrap mt-12 gap-6  lg:gap-0">
@@ -240,8 +240,8 @@ export default function Home() {
           </div>
         </div>
         {/* Service section */}
-        <div data-aos="fade-up" className="mb-20" id="Services">
-          <h1 className="text-4xl font-semibold mt-12 mb-10 ">Services</h1>
+        <div data-aos="fade-up" className="mb-20 mt-8" id="Services">
+          <h1 className="text-4xl font-semibold mt-12 mb-10 text-center lg:text-left underline decoration-sky-500">Services</h1>
           <div className="flex flex-wrap gap-4 ">
             <div
               data-aos="flip-left"
@@ -281,8 +281,8 @@ export default function Home() {
           </div>
         </div>
         {/* Skill section */}
-        <div data-aos="fade-down" className=" mt-8 lg:mt-20">
-          <h1 className="text-4xl font-semibold mt-8 mb-10 ">SKILL SET</h1>
+        <div data-aos="fade-down" className=" mt-8 lg:mt-16">
+          <h1 className="text-4xl font-semibold mt-8 mb-10 underline decoration-sky-500">SKILL SET</h1>
           <div className="flex flex-wrap gap-20 lg:gap-64 justify-center">
             <div>
               <h1 className="text-center mb-8 front-back-color">Frontend</h1>
