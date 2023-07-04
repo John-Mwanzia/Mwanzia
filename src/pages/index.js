@@ -348,7 +348,7 @@ export default function Home() {
                   height={82}
                   className="rounded-full"
                 />
-                <h2>PlanetSale</h2>
+                <h2>PlanetScale</h2>
               </div><div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
                   data-aos="zoom-in-left"
