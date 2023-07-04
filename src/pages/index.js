@@ -342,7 +342,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
                   data-aos="zoom-in-left"
-                  src="/mongoose-icon.svg"
+                  src="/images/download.png"
                   alt="nodejs icon"
                   width={143}
                   height={132}
@@ -351,7 +351,7 @@ export default function Home() {
               </div><div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
                   data-aos="zoom-in-left"
-                  src="/mongoose-icon.svg"
+                  src="/prisma.svg"
                   alt="nodejs icon"
                   width={143}
                   height={132}
