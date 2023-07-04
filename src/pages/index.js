@@ -314,8 +314,8 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/nodejs.svg"
                   alt="nodejs icon"
-                  width={143}
-                  height={132}
+                  width={93}
+                  height={82}
                 />
                 <h2>Nodejs</h2>
               </div>
@@ -324,8 +324,8 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/mongodb.svg"
                   alt="nodejs icon"
-                  width={143}
-                  height={132}
+                  width={93}
+                  height={82}
                 />
                 <h2>Mongodb</h2>
               </div>
@@ -334,8 +334,8 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/mongoose-icon.svg"
                   alt="nodejs icon"
-                  width={143}
-                  height={132}
+                  width={93}
+                  height={82}
                 />
                 <h2>Mongoose</h2>
               </div>
@@ -344,17 +344,18 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/images/download.png"
                   alt="nodejs icon"
-                  width={143}
-                  height={132}
+                  width={93}
+                  height={82}
+                  className="rounded-full"
                 />
                 <h2>PlanetSale</h2>
               </div><div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
                   data-aos="zoom-in-left"
-                  src="/prisma.svg"
+                  src="/images/icons8-prisma-orm-48.png"
                   alt="nodejs icon"
-                  width={143}
-                  height={132}
+                  width={93}
+                  height={82}
                 />
                 <h2>Prisma</h2>
               </div>
