@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </div>
         {/* About section */}
-        <div data-aos="fade-right" id="About">
+        <div data-aos="fade-right max-w-[85%]" id="About">
           <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
             About Me
           </h1>
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
         </div>
         {/* Project section */}
-        <div data-aos="fade-up">
+        <div data-aos="fade-up max-w-[85%] ">
           <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
             Projects
           </h1>
@@ -244,7 +244,7 @@ export default function Home() {
           </div>
         </div>
         {/* Service section */}
-        <div data-aos="fade-up" className="mb-20 mt-8" id="Services">
+        <div data-aos="fade-up" className="mb-20 mt-8 max-w-[85%]" id="Services">
           <h1 className="text-4xl font-semibold mt-12 mb-10 text-center lg:text-left underline decoration-sky-500">
             Services
           </h1>
