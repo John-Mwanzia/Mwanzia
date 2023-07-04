@@ -244,7 +244,11 @@ export default function Home() {
           </div>
         </div>
         {/* Service section */}
-        <div data-aos="fade-up" className="mb-20 mt-8 max-w-[85%]" id="Services">
+        <div
+          data-aos="fade-up"
+          className="mb-20 mt-8 max-w-[85%]"
+          id="Services"
+        >
           <h1 className="text-4xl font-semibold mt-12 mb-10 text-center lg:text-left underline decoration-sky-500">
             Services
           </h1>
@@ -349,7 +353,8 @@ export default function Home() {
                   className="rounded-full"
                 />
                 <h2>PlanetScale</h2>
-              </div><div className="flex flex-wrap gap-4 items-center mt-8">
+              </div>
+              <div className="flex flex-wrap gap-4 items-center mt-8">
                 <Image
                   data-aos="zoom-in-left"
                   src="/images/icons8-prisma-orm-48.png"
