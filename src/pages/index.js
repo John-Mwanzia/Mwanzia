@@ -380,12 +380,12 @@ export default function Home() {
             <form>
               <div className="flex flex-wrap gap-4 mt-8">
                 <input
-                  className="rounded-md p-2 outline-none text-black bg-white"
+                  className="rounded-md p-2 outline-none text-black bg-white w-full sm:w-auto"
                   placeholder="Name..."
                   required
                 />
                 <input
-                  className="rounded-md p-2 outline-none text-black bg-white"
+                  className="rounded-md p-2 outline-none text-black bg-white w-full sm:w-auto"
                   placeholder="Email..."
                   required
                 />
