@@ -139,7 +139,7 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4"
+          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-48"
           id="Home"
         >
           <div data-aos="flip-right">
@@ -176,7 +176,7 @@ export default function Home() {
           <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
             About Me
           </h1>
-          <div className="flex items-center mt-8 flex-wrap gap-28 lg:gap-48">
+          <div className="flex items-center mt-8 flex-wrap xl:gap-0 2xl:gap-48">
             <div>
               <Image
                 data-aos="zoom-in-right"
@@ -214,6 +214,7 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/images/mobile.png"
                   alt="project-pic-item1"
+                  className="xl:max-w-[360px] 2xl:max-w-[430px] xl:max-h-[305px] 2xl:max-h-[370px]"
                   width={430}
                   height={350}
                 />
@@ -225,6 +226,7 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/images/mobile.png"
                   alt="project-pic-item1"
+                  className="xl:max-w-[360px] 2xl:max-w-[430px] xl:max-h-[305px] 2xl:max-h-[370px]"
                   width={430}
                   height={350}
                 />
@@ -236,6 +238,7 @@ export default function Home() {
                   data-aos="zoom-in-left"
                   src="/images/mobile.png"
                   alt="project-pic-item1"
+                  className="xl:max-w-[360px] 2xl:max-w-[430px] xl:max-h-[305px] 2xl:max-h-[370px]"
                   width={430}
                   height={350}
                 />
