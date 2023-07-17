@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </div>
         {/* About section */}
-        <div data-aos="fade-right max-w-[85%]" id="About">
+        <div data-aos="fade-right" className="max-w-[85%]" id="About">
           <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
             About Me
           </h1>
@@ -203,7 +203,7 @@ export default function Home() {
           </div>
         </div>
         {/* Project section */}
-        <div data-aos="fade-up max-w-[85%] ">
+        <div data-aos="fade-up" className="max-w-[85%]">
           <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
             Projects
           </h1>
@@ -291,7 +291,7 @@ export default function Home() {
           </div>
         </div>
         {/* Skill section */}
-        <div data-aos="fade-down" className=" mt-8 lg:mt-16">
+        <div data-aos="fade-down" className=" mt-8 lg:mt-16  max-w-[85%]">
           <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
             SKILL SET
           </h1>
