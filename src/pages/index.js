@@ -207,7 +207,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
             Projects
           </h1>
-          <div className="flex flex-wrap mt-12 gap-6  lg:gap-0">
+          <div className="flex flex-wrap justify-center items-center mt-12 gap-6  lg:gap-0">
             <div>
               <Link href="https://smart-tech-stores.vercel.app/">
                 <Image
@@ -252,7 +252,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold mt-12 mb-10 text-center lg:text-left underline decoration-sky-500">
             Services
           </h1>
-          <div className="flex flex-wrap gap-4 ">
+          <div className="flex flex-wrap gap-4 justify-center items-center  ">
             <div
               data-aos="flip-left"
               className="ground-color p-4 text-center rounded-lg"
@@ -295,7 +295,7 @@ export default function Home() {
           <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
             SKILL SET
           </h1>
-          <div className="flex flex-wrap gap-20 lg:gap-48 justify-center">
+          <div className="flex flex-wrap gap-20 lg:gap-48 justify-center items-center">
             <div>
               <h1 className="text-center text-4xl lg:text-5xl mb-8 front-back-color">
                 Frontend
