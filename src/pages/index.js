@@ -41,7 +41,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center  ">
         <Canvas />
-        <div className="  inline-flex  items-center justify-between w-full mt-7 mb-8 ">
+        <div className="  inline-flex  items-center justify-between w-full xl:w-[88%] mt-7 mb-8 ">
           <Navbar isBordered className="relative">
             <Navbar.Toggle showIn="xs" />
             <Navbar.Brand>
@@ -139,11 +139,11 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40  relative bg-transparent"
+          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40  relative bg-transparent max-w-[85%]"
           id="Home"
         >
           <div data-aos="flip-right">
-            <div>
+            <div >
               <p className=" text-4xl px-4 lg:px-0 font-semibold  mb-8">
                 Hello
               </p>
