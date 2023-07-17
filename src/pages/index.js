@@ -139,7 +139,7 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40  relative bg-transparent max-w-[85%]"
+          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4"
           id="Home"
         >
           <div data-aos="flip-right">
