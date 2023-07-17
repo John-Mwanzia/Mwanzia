@@ -261,7 +261,7 @@ export default function Home() {
               className="ground-color p-4 text-center rounded-lg"
             >
               <h1 className="text-3xl mb-4">Web Development</h1>
-              <p className="max-w-sm">
+              <p className="max-w-sm xl:max-w-xs 2xl:max-w-sm">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia,molestiae quas vel sint commodi repudiandae
@@ -273,7 +273,7 @@ export default function Home() {
               className="ground-color p-4 text-center rounded-lg"
             >
               <h1 className="text-3xl mb-4">Video editing</h1>
-              <p className="max-w-sm">
+              <p className="max-w-sm xl:max-w-xs 2xl:max-w-sm">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia,molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum
@@ -284,7 +284,7 @@ export default function Home() {
               className="ground-color p-4 text-center rounded-lg"
             >
               <h1 className="text-3xl mb-4">Figma Web design</h1>
-              <p className="max-w-sm">
+              <p className="max-w-sm xl:max-w-xs 2xl:max-w-sm">
                 {" "}
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia,molestiae quas vel sint commodi repudiandae
