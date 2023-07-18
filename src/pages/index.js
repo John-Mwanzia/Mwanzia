@@ -59,7 +59,7 @@ export default function Home() {
 
             <Navbar.Content
               hideIn="xs"
-              className="inline-flex space-x-24 items-center justify-end flex-wrap "
+              className="inline-flex space-x-12 lg:space-x-24  items-center justify-end flex-wrap "
             >
               <Navbar.Link
                 href="#Home"
@@ -406,13 +406,13 @@ export default function Home() {
 
           <div className=" flex flex-col  items-center mt-8">
             <p className="text-4xl text-red-500">Quick Access</p>
-            <div className="flex flex-wrap flex-1  gap-4 mt-6">
-              <h3>Email :</h3>
-              <h3>johnmwanzia277@gmail.com</h3>
+            <div className="flex flex-wrap justify-center flex-1  gap-x-4 mt-6">
+              <h3 className="text-xl">Email :</h3>
+              <h3 className="text-xl">johnmwanzia277@gmail.com</h3>
             </div>
-            <div className="flex gap-4 flex-wrap flex-1">
-              <h3>Phone No : </h3>
-              <h3> 0707979247</h3>
+            <div className="flex gap-4  flex-wrap flex-1">
+              <h3 className="text-xl">Phone No : </h3>
+              <h3 className="text-xl"> 0707979247</h3>
             </div>
           </div>
           <div className="flex flex-row gap-4 justify-around sm:flex-col   mt-8">
