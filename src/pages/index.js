@@ -139,7 +139,7 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-16 lg:gap-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-48"
+          className="flex flex-wrap gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-64"
           id="Home"
         >
           <div data-aos="flip-right">
@@ -416,7 +416,7 @@ export default function Home() {
               <h3 className="text-xl"> 0707979247</h3>
             </div>
           </div>
-          <div className="flex flex-row gap-4 justify-around lg:flex-col   mt-8">
+          <div className="flex flex-row gap-4 justify-around lg:flex-col  mt-8">
             <Link href="https://github.com/John-Mwanzia">
               <Image
                 src="/github-icon.svg"
