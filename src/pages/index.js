@@ -139,15 +139,15 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-col md:flex-row gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-x-64"
+          className="flex flex-col sm:flex-row gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-x-64"
           id="Home"
         >
           <div data-aos="flip-right">
             <div >
-              <p className=" text-4xl md:text-3xl lg:text-4xl  lg:px-0 px-4 sm:px-0 font-semibold  mb-8">
+              <p className=" text-4xl sm:text-3xl lg:text-4xl  lg:px-0 px-4 sm:px-0 font-semibold  mb-8">
                 Hello
               </p>
-              <p className=" text-5xl md:text-4xl lg:text-6xl  lg:px-0 px-4 sm:px-0 font-bold mb-4">
+              <p className=" text-5xl sm:text-4xl lg:text-6xl  lg:px-0 px-4 sm:px-0 font-bold mb-4">
                 I’m a web developer
               </p>
               <p className=" max-w-xl  text-base font-semibold px-4 sm:px-0 lg:px-0">
@@ -173,10 +173,10 @@ export default function Home() {
         </div>
         {/* About section */}
         <div data-aos="fade-right" className="max-w-[85%]" id="About">
-          <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center md:text-left underline decoration-sky-500">
+          <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center sm:text-left underline decoration-sky-500">
             About Me
           </h1>
-          <div className="flex justify-center mt-8  items-center xl:gap-0 2xl:gap-48">
+          <div className="flex flex-col sm:flex-row justify-center mt-8  items-center xl:gap-0 2xl:gap-48">
             <div className="sm:max-w-md  lg:max-w-xl">
               <Image
                 data-aos="zoom-in-right"
