@@ -416,7 +416,7 @@ export default function Home() {
               <h3 className="text-xl"> 0707979247</h3>
             </div>
           </div>
-          <div className="flex flex-row gap-4 justify-around sm:flex-col   mt-8">
+          <div className="flex flex-row gap-4 justify-around lg:flex-col   mt-8">
             <Link href="https://github.com/John-Mwanzia">
               <Image
                 src="/github-icon.svg"
