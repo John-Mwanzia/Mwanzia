@@ -173,7 +173,7 @@ export default function Home() {
         </div>
         {/* About section */}
         <div data-aos="fade-right" className="max-w-[85%]" id="About">
-          <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
+          <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center md:text-left underline decoration-sky-500">
             About Me
           </h1>
           <div className="flex justify-center mt-8  items-center xl:gap-0 2xl:gap-48">
