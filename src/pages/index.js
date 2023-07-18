@@ -176,19 +176,20 @@ export default function Home() {
           <h1 className=" text-4xl font-semibold  mt-8 text-center lg:text-left underline decoration-sky-500">
             About Me
           </h1>
-          <div className="flex items-center mt-8 flex-wrap xl:gap-0 2xl:gap-48">
-            <div>
+          <div className="flex justify-center mt-8  items-center xl:gap-0 2xl:gap-48">
+            <div className="sm:max-w-md  lg:max-w-xl">
               <Image
                 data-aos="zoom-in-right"
                 src="/images/mypic.png"
                 alt="my pic"
+                className="sm:w-md lg:max-w-xl"
                 width={465}
                 height={370}
               />
             </div>
 
             <div>
-              <p className=" max-w-xl font-semibold px-4 lg:px-0 ">
+              <p className="sm:max-w-sm  2xl:max-w-lg font-semibold  lg:px-0 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia, molestiae quas vel sint commodi repudiandae
                 consequuntur voluptatum laborum numquam blanditiis harum
