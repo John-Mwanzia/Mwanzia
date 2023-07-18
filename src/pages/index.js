@@ -139,15 +139,15 @@ export default function Home() {
         </div>
         {/* Hero section */}
         <div
-          className="flex flex-wrap gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-64"
+          className="flex flex-col md:flex-row gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-x-64"
           id="Home"
         >
           <div data-aos="flip-right">
             <div >
-              <p className=" text-4xl px-4 lg:px-0 font-semibold  mb-8">
+              <p className=" text-4xl md:text-3xl lg:text-4xl px-4 lg:px-0 font-semibold  mb-8">
                 Hello
               </p>
-              <p className=" text-5xl lg:text-6xl px-4 lg:px-0  font-bold mb-4">
+              <p className=" text-5xl md:text-4xl lg:text-6xl px-4 lg:px-0  font-bold mb-4">
                 I’m a web developer
               </p>
               <p className=" max-w-xl  text-base font-semibold px-4 lg:px-0">
