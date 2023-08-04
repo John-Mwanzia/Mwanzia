@@ -225,7 +225,7 @@ export default function Home() {
               <Link href="https://smart-tech-stores.vercel.app/">
                 <Image
                   data-aos="zoom-in-left"
-                  src="/images/mobile.png"
+                  src="/images/mobile1.png"
                   alt="project-pic-item1"
                   className="xl:max-w-[360px] 2xl:max-w-[430px] xl:max-h-[305px] 2xl:max-h-[370px]"
                   width={430}
