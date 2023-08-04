@@ -222,7 +222,7 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <Link href="https://smart-tech-stores.vercel.app/">
+              <Link href="https://proud-forest-09d2d6e10.3.azurestaticapps.net/">
                 <Image
                   data-aos="zoom-in-left"
                   src="/images/mobile1.png"
