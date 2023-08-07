@@ -6,9 +6,9 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function NavBar(props) {
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-      }, []);
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const { collapseItems } = props;
   return (
     <div>
