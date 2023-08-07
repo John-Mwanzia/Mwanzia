@@ -6,7 +6,6 @@ import { Navbar, Text } from "@nextui-org/react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import { animateScroll } from "react-scroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
