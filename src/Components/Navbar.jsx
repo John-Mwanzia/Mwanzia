@@ -2,7 +2,8 @@ import React from 'react'
 import { Navbar, Text } from "@nextui-org/react";
 import Link from "next/link";
 
-export default function NavBar() {
+export default function NavBar(props) {
+    const {collapseItems} = props
   return (
     <div>
          <div className="  inline-flex  items-center justify-between w-full xl:w-[88%] mt-7 mb-8 ">

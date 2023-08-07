@@ -6,6 +6,7 @@ import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import NavBar from "@/Components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,7 +41,7 @@ export default function Home() {
     <>
       <main className="flex min-h-screen flex-col items-center  ">
         <Canvas />
-       
+        <NavBar collapseItems={collapseItems} />
         {/* Hero section */}
         <div
           className="flex flex-col sm:flex-row gap-x-16 lg:gap-x-48 mt-20 lg:mt-40 justify-center  relative bg-transparent max-w-[85%] xl:gap-4 2xl:gap-x-64"
