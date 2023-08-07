@@ -15,7 +15,8 @@ export default function NavBar(props) {
       <div className="  inline-flex  items-center justify-between w-full xl:w-[88%] mt-7 mb-8 ">
         <Navbar isBordered className="relative">
           <Navbar.Toggle showIn="xs" />
-          <Navbar.Brand>
+        <div>
+        <Navbar.Brand>
             <Text b color="inherit">
               <div
                 className="flex space-x-4"
@@ -85,6 +86,7 @@ export default function NavBar(props) {
               Contact
             </Navbar.Link>
           </Navbar.Content>
+        </div>
 
           <Navbar.Collapse className="mt-4">
             {collapseItems.map((item, index) => (
