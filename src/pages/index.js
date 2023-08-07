@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Canvas from "@/Components/Canvas";
 import Link from "next/link";
-import { Navbar, Text } from "@nextui-org/react";
+
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
