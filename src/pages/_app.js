@@ -1,4 +1,3 @@
-import Canvas from "@/components/Canvas";
 import "@/styles/globals.css";
 import { NextUIProvider, createTheme } from "@nextui-org/react";
 
