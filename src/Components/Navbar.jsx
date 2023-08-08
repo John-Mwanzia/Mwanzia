@@ -13,7 +13,7 @@ export default function NavBar(props) {
   return (
     <div>
       <div className=" mt-7 mb-8 ">
-        <Navbar isBordered className="relative flex items-center justify-center w-full gap-96">
+        <Navbar isBordered className="relative ">
           <Navbar.Toggle showIn="xs" />
         
             <Navbar.Brand>
