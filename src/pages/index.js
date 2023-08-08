@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Canvas from "@/components/Canvas";
+import Canvas from "../components/Canvas";
 import Link from "next/link";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import NavBar from "@/components/Navbar";
+import NavBar from "../components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
