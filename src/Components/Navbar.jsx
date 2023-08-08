@@ -89,7 +89,7 @@ export default function NavBar(props) {
             </Navbar.Content>
 
 
-          <Navbar.Collapse className="mt-4">
+          <Navbar.Collapse className="mt-4 flex flex-col items-center">
             {collapseItems.map((item, index) => (
               <Navbar.CollapseItem key={item.Href}>
                 <Link
