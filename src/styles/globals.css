@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+#canvas {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+  z-index: -1;
+}
+
+.ground-color{
+  background-color: #0C124B;
+}
+.front-back-color{
+ color: #DC8725;
+}
+
+.button-color{
+  background-color: #C35042;
+  
+} 
