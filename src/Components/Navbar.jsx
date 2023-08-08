@@ -13,7 +13,7 @@ export default function NavBar(props) {
   return (
     <>
       <div className=" mt-7 mb-8 w-[90%]">
-        <Navbar isBordered className="relative flex justify-between gap-96">
+        <Navbar isBordered className="relative flex justify-between">
           <Navbar.Toggle showIn="xs" />
         
             <Navbar.Brand>
