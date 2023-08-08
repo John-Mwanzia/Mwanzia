@@ -11,9 +11,9 @@ export default function NavBar(props) {
   }, []);
   const { collapseItems } = props;
   return (
-    <div>
-      <div className=" mt-7 mb-8 ">
-        <Navbar isBordered className="relative ">
+    <>
+      <div className=" mt-7 mb-8 w-[90%]">
+        <Navbar isBordered className="relative flex justify-between gap-96">
           <Navbar.Toggle showIn="xs" />
         
             <Navbar.Brand>
@@ -110,6 +110,6 @@ export default function NavBar(props) {
           </Navbar.Collapse>
         </Navbar>
       </div>
-    </div>
+    </>
   );
 }
