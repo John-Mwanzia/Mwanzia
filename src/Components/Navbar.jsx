@@ -12,10 +12,10 @@ export default function NavBar(props) {
   const { collapseItems } = props;
   return (
     <div>
-      <div className="  inline-flex  items-center justify-between w-full xl:w-[88%] mt-7 mb-8 ">
-        <Navbar isBordered className="relative">
+      <div className=" mt-7 mb-8 ">
+        <Navbar isBordered className="relative flex items-center justify-center w-full gap-96">
           <Navbar.Toggle showIn="xs" />
-          <div>
+        
             <Navbar.Brand>
               <Text b color="inherit">
                 <div
@@ -86,7 +86,7 @@ export default function NavBar(props) {
                 Contact
               </Navbar.Link>
             </Navbar.Content>
-          </div>
+
 
           <Navbar.Collapse className="mt-4">
             {collapseItems.map((item, index) => (
