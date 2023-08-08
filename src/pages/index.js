@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import Canvas from "@/Components/Canvas";
+import Canvas from "@/components/Canvas";
 import Link from "next/link";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import NavBar from "@/Components/Navbar";
+import NavBar from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -48,7 +48,7 @@ export default function Home() {
           id="Home"
         >
           <div data-aos="flip-right">
-            <div >
+            <div>
               <p className=" text-4xl sm:text-3xl lg:text-4xl  lg:px-0 px-4 sm:px-0 font-semibold  mb-8">
                 Hello
               </p>
