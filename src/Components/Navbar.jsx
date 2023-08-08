@@ -12,7 +12,7 @@ export default function NavBar(props) {
   const { collapseItems } = props;
   return (
     <>
-      <div className=" mt-7 mb-8 w-[90%]">
+      <div className=" mt-7 mb-8 w-[85%]">
         <Navbar isBordered className="relative flex justify-between">
           <Navbar.Toggle showIn="xs" />
         
