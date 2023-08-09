@@ -7,6 +7,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import NavBar from "../components/Navbar";
+import HeroSection from "@/components/HeroSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,7 +44,7 @@ export default function Home() {
         <Canvas />
         <NavBar collapseItems={collapseItems} />
         {/* Hero section */}
-       
+      <HeroSection />
         {/* About section */}
         <div data-aos="fade-right" className="max-w-[85%]" id="About">
           <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center sm:text-left underline decoration-sky-500">
