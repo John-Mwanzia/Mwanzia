@@ -9,7 +9,6 @@ import { useEffect } from "react";
 import NavBar from "../components/Navbar";
 import HeroSection from "@/components/HeroSection";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const collapseItems = [
