@@ -43,7 +43,6 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center  ">
         <Canvas />
         <NavBar collapseItems={collapseItems} />
-        {/* Hero section */}
         <HeroSection />
         {/* About section */}
         <div data-aos="fade-right" className="max-w-[85%]" id="About">
