@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import NavBar from "../components/Navbar";
 import HeroSection from "@/components/HeroSection";
+import About from "@/components/About";
 
 
 export default function Home() {
@@ -44,7 +45,7 @@ export default function Home() {
         <NavBar collapseItems={collapseItems} />
         <HeroSection />
         {/* About section */}
-       
+       <About />
         {/* Project section */}
         <div data-aos="fade-up" className="max-w-[85%]">
           <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
