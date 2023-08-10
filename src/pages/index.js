@@ -44,7 +44,6 @@ export default function Home() {
         <Canvas />
         <NavBar collapseItems={collapseItems} />
         <HeroSection />
-        {/* About section */}
        <About />
         {/* Project section */}
         <div data-aos="fade-up" className="max-w-[85%]">
