@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import NavBar from "../components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import About from "@/components/About";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   const collapseItems = [
@@ -43,8 +44,8 @@ export default function Home() {
         <NavBar collapseItems={collapseItems} />
         <HeroSection />
         <About />
-        {/* Project section */}
-
+      
+          <Projects />   
         {/* Service section */}
         <div
           data-aos="fade-up"
