@@ -44,8 +44,7 @@ export default function Home() {
         <NavBar collapseItems={collapseItems} />
         <HeroSection />
         <About />
-      
-          <Projects />   
+        <Projects />
         {/* Service section */}
         <div
           data-aos="fade-up"
