@@ -9,6 +9,7 @@ import NavBar from "../components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 
 export default function Home() {
   const collapseItems = [
@@ -45,7 +46,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <Projects />
-
+        <Services />
         {/* Skill section */}
         <div data-aos="fade-down" className=" mt-8 lg:mt-16  max-w-[85%]">
           <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
