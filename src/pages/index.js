@@ -45,8 +45,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <Projects />
-        {/* Service section */}
-        
+
         {/* Skill section */}
         <div data-aos="fade-down" className=" mt-8 lg:mt-16  max-w-[85%]">
           <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
