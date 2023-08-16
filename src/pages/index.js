@@ -10,6 +10,7 @@ import HeroSection from "@/components/HeroSection";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   const collapseItems = [
@@ -47,8 +48,7 @@ export default function Home() {
         <About />
         <Projects />
         <Services />
-        {/* Skill section */}
-        
+        <Skills />
       </main>
 
       <footer data-aos="fade-up" className="mt-20" id="Contact">
