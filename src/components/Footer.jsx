@@ -5,7 +5,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <footer data-aos="fade-up" className="mt-20" id="Contact">
+      <footer data-aos="fade-up" className="mt-20 w-screen" id="Contact">
         <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
           Contact
         </h1>
