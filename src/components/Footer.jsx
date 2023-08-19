@@ -1,11 +1,11 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export default function Footer() {
   return (
     <>
-             <footer data-aos="fade-up" className="mt-20" id="Contact">
+      <footer data-aos="fade-up" className="mt-20" id="Contact">
         <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
           Contact
         </h1>
@@ -74,7 +74,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-      </footer> 
+      </footer>
     </>
-  )
+  );
 }
