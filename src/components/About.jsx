@@ -22,13 +22,14 @@ export default function About() {
 
           <div>
             <p className="sm:max-w-sm  2xl:max-w-lg font-semibold  lg:px-0 ">
-               I'm a web developer well-versed in the art of crafting seamless 
-               digital experiences. My expertise spans both frontend and backend realms,
-                allowing me to bring holistic and efficient solutions to life.
-                 I'm committed to building visually stunning interfaces backed by robust 
-                 technical architecture. My passion lies in transforming ideas into 
-                 engaging and functional websites, where every pixel and line of code plays a
-                  crucial role. Join me in creating the next generation of captivating online experiences.
+              I'm a web developer well-versed in the art of crafting seamless
+              digital experiences. My expertise spans both frontend and backend
+              realms, allowing me to bring holistic and efficient solutions to
+              life. I'm committed to building visually stunning interfaces
+              backed by robust technical architecture. My passion lies in
+              transforming ideas into engaging and functional websites, where
+              every pixel and line of code plays a crucial role. Join me in
+              creating the next generation of captivating online experiences.
             </p>
             <button className=" flex-1 py-3 pl-4 pr-4 border-2 ml-4 lg:ml-0 rounded-3xl border-indigo-900 text-2xl font-semibold mt-4">
               Download CV
