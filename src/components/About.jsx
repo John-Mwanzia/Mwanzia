@@ -22,10 +22,10 @@ export default function About() {
 
           <div>
             <p className="sm:max-w-sm  2xl:max-w-lg font-semibold  lg:px-0 ">
-              I'm a web developer well-versed in the art of crafting seamless
+              Im a web developer well-versed in the art of crafting seamless
               digital experiences. My expertise spans both frontend and backend
               realms, allowing me to bring holistic and efficient solutions to
-              life. I'm committed to building visually stunning interfaces
+              life. Im committed to building visually stunning interfaces
               backed by robust technical architecture. My passion lies in
               transforming ideas into engaging and functional websites, where
               every pixel and line of code plays a crucial role. Join me in
