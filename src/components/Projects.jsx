@@ -35,7 +35,7 @@ export default function Projects() {
             </Link>
           </div>
           <div>
-            <Link href="https://smart-tech-stores.vercel.app/">
+            <Link href="https://terra-bloom.vercel.app/">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/TerraBloom.png"
