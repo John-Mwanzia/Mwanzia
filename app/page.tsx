@@ -1,17 +1,11 @@
-import Image from "next/image";
-import Canvas from "../components/Canvas";
-import Link from "next/link";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
-import NavBar from "../components/Navbar";
-import HeroSection from "@/components/HeroSection";
 import About from "@/components/About";
+import Canvas from "@/components/Canvas";
+import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
+import NavBar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
 import Skills from "@/components/Skills";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   const collapseItems = [
@@ -36,22 +30,16 @@ export default function Home() {
       id: "Contact",
     },
   ];
-
-  useEffect(() => {
-    Aos.init({ duration: 2000 });
-  }, []);
   return (
-    <>
-      <main className="flex min-h-screen flex-col items-center  ">
-        <Canvas />
-        <NavBar collapseItems={collapseItems} />
-        <HeroSection />
-        <About />
+    <div className="overflow-x-hidden flex min-h-screen flex-col items-center  ">
+      <Canvas />
+      {/* <NavBar collapseItems={collapseItems} /> */}
+       <HeroSection />
+         <About />
         <Projects />
         <Services />
         <Skills />
         <Footer />
-      </main>
-    </>
+    </div>
   );
 }
