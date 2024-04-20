@@ -1,116 +1,114 @@
-"use client"
+"use client";
 
-import React from "react";
-import { Navbar, Text } from "@nextui-org/react";
-import Link from "next/link";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { Menu } from "lucide-react";
+import { useEffect, useState } from "react";
 import { animateScroll } from "react-scroll";
 
-export default function NavBar(props) {
+const links = [
+  {
+    name: "Home",
+    Href: "#Home",
+    id: "Home",
+  },
+  {
+    name: "About",
+    Href: "#About",
+    id: "About",
+  },
+  {
+    name: " Services",
+    Href: "#Services",
+    id: "Services",
+  },
+  {
+    name: "Contact",
+    Href: "#Contact",
+    id: "Contact",
+  },
+];
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
-  const { collapseItems } = props;
+
   return (
     <>
-      <div className=" mt-7 mb-8 w-[85%]">
-        <Navbar isBordered className="relative flex justify-between">
-          <Navbar.Toggle showIn="xs" />
+      <div className=" mt-7 mb-8 container px-4 sm:px-32 overflow-hidden">
+        <nav className="relative flex justify-between items-center border-b pb-2 border-gray-300/50">
+          <div>
+            <div
+              className="flex space-x-4"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <p className="text-4xl font-bold text-yellow-600">John</p>
+              <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
+            </div>
+          </div>
+          <div className="sm:hidden w-20">
+            <Menu />
+          </div>
 
-          <Navbar.Brand>
-            <Text b color="inherit">
-              <div
-                className="flex space-x-4"
-                data-aos="fade-down"
-                data-aos-delay="300"
-              >
-                <p className="text-4xl font-bold text-yellow-600">John</p>
-                <p className="text-4xl mr-4 font-bold text-red-500">Kioko</p>
-              </div>
-            </Text>
-          </Navbar.Brand>
-
-          <Navbar.Content
-            hideIn="xs"
-            className="inline-flex space-x-12 lg:space-x-24  items-center justify-end flex-wrap "
-          >
-            <Navbar.Link
-              href="#Home"
+          <div className=" hidden sm:flex space-x-12 lg:space-x-12  items-center justify-end flex-wrap ">
+            <div
               data-aos-delay="400"
               data-aos="fade-down"
-              className="text-xl"
+              className=""
               onClick={() => {
                 animateScroll.scrollTo(
-                  document.getElementById("Home").offsetTop
+                  document.getElementById("Home")!.offsetTop
                 );
               }}
             >
-              Home
-            </Navbar.Link>
-            <Navbar.Link
-              href="#About"
+              <p className="cursor-pointer">Home</p>
+            </div>
+            <div
               data-aos-delay="500"
               data-aos="fade-down"
-              className="text-xl"
+              className=""
               onClick={() => {
                 animateScroll.scrollTo(
-                  document.getElementById("About").offsetTop
+                  document.getElementById("About")!.offsetTop
                 );
               }}
             >
-              About
-            </Navbar.Link>
-            <Navbar.Link
-              href="#Services"
+              <p className="cursor-pointer">About</p>
+            </div>
+            <div
               data-aos-delay="600"
               data-aos="fade-down"
-              className="text-xl"
+              className=""
               onClick={() => {
                 animateScroll.scrollTo(
-                  document.getElementById("Services").offsetTop
+                  document.getElementById("Services")!.offsetTop
                 );
               }}
             >
-              Services
-            </Navbar.Link>
-            <Navbar.Link
-              href="#Contact"
+              <p className="cursor-pointer">Services</p>
+            </div>
+            <div
               data-aos-delay="700"
               data-aos="fade-down"
-              className="text-xl"
+              className=""
               onClick={() => {
                 animateScroll.scrollTo(
-                  document.getElementById("Contact").offsetTop
+                  document.getElementById("Contact")!.offsetTop
                 );
               }}
             >
-              Contact
-            </Navbar.Link>
-          </Navbar.Content>
-
-          <Navbar.Collapse className="mt-4 flex flex-col items-center">
-            {collapseItems.map((item, index) => (
-              <Navbar.CollapseItem key={item.Href}>
-                <Link
-                  color="inherit"
-                  css={{
-                    minWidth: "100%",
-                  }}
-                  href={item.Href}
-                  onClick={() => {
-                    animateScroll.scrollTo(
-                      document.getElementById(`${item.id}`).offsetTop
-                    );
-                  }}
-                >
-                  {item.name}
-                </Link>
-              </Navbar.CollapseItem>
-            ))}
-          </Navbar.Collapse>
-        </Navbar>
+              <p className="cursor-pointer">Contact</p>
+            </div>
+          </div>
+        </nav>
       </div>
     </>
   );

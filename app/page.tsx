@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden flex min-h-screen flex-col items-center  ">
       <Canvas />
-      {/* <NavBar collapseItems={collapseItems} /> */}
+      <NavBar />
        <HeroSection />
          <About />
         <Projects />
