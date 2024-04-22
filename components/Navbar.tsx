@@ -42,8 +42,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className=" mt-7 mb-8 container px-4 sm:px-32 overflow-hidden">
-        <nav className="relative flex justify-between items-center border-b pb-2 border-gray-300/50">
+      <div className=" mt-7 mb-8 container px-4 sm:px-32 overflow-x-hidden">
+        <nav className="relative flex justify-between items-center border-b-[0.5px] pb-2 border-gray-300/20">
           <div>
             <div
               className="flex space-x-4"
