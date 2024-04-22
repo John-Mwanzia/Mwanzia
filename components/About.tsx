@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
   return (
     <>
-      <div data-aos="fade-right" className="max-w-[85%]" id="About">
+      <div data-aos="fade-right" className="px-4 sm:px-32 overflow-hidden container" id="About">
         <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center sm:text-left underline decoration-sky-500">
           About Me
         </h1>
