@@ -7,9 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.0.2",
     "@types/aos": "^3.0.7",
     "@types/react-scroll": "^1.8.10",
     "aos": "^2.3.4",
