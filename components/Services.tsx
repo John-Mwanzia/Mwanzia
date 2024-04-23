@@ -3,7 +3,7 @@ import React from "react";
 export default function Services() {
   return (
     <>
-      <div data-aos="fade-up" className="mb-20 mt-8 px-4 sm:px-32 overflow-hidden container" id="Services">
+      <div data-aos="fade-up" className="mb-20 mt-8 px-8 2xl:px-32 overflow-hidden container" id="Services">
         <h1 className="text-4xl font-semibold mt-12 mb-10 text-center lg:text-left underline decoration-sky-500">
           Services
         </h1>

@@ -4,7 +4,7 @@ import React from "react";
 export default function Skills() {
   return (
     <>
-      <div data-aos="fade-down" className=" mt-8 lg:mt-16 px-4 sm:px-32 overflow-hidden container">
+      <div data-aos="fade-down" className=" mt-8 lg:mt-16 px-8 2xl:px-32 overflow-hidden container">
         <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
           SKILL SET
         </h1>
