@@ -1,29 +1,49 @@
-import Image from "next/image";
-import React from "react";
+'use client';
+
+import Image from 'next/image';
+import React, { useEffect, useState } from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 export default function HeroSection() {
+  const phrases = [
+    'Software Engineer',
+    'web developer',
+    'freelancer',
+    'fullStack Dev',
+  ];
+
+  const [currentText, setCurrentText] = useTypewriter({
+    words: phrases,
+    typeSpeed: 100,
+    loop: true,
+  });
+
   return (
     <>
       <div
-        className="flex flex-col sm:flex-row gap-x-16 lg:gap-x-20 mt-20 lg:mt-40 justify-center  relative  px-8 2xl:px-32 overflow-hidden container xl:gap-4 2xl:gap-x-36"
+        className="container relative mt-20 flex flex-col justify-center gap-x-16 overflow-hidden  px-8  sm:flex-row lg:mt-40 lg:gap-x-20 xl:gap-4 2xl:gap-x-36 2xl:px-32"
         id="Home"
       >
         <div data-aos="flip-right">
           <div>
-            <p className=" text-4xl sm:text-3xl lg:text-4xl  lg:px-0 px-4 sm:px-0 font-semibold  mb-8">
+            <p className=" mb-8 px-4 text-4xl  font-semibold sm:px-0 sm:text-3xl lg:px-0  lg:text-4xl">
               Hello
             </p>
-            <p className=" text-5xl sm:text-4xl lg:text-6xl  lg:px-0 px-4 sm:px-0 font-bold mb-4">
-              I’m a web developer
+            <p className=" mb-4 px-4 text-4xl  font-bold sm:px-0 sm:text-4xl lg:px-0 lg:text-5xl">
+              <span className="mr-2">I’m a</span>
+              <span className="text-[#5E4AD3]">{currentText}</span>
+              <span className="text-[#EF4444]">
+                <Cursor />
+              </span>
             </p>
-            <p className=" max-w-xl  text-base font-semibold px-4 sm:px-0 lg:px-0">
+            <p className=" max-w-xl  px-4 text-base font-semibold sm:px-0 lg:px-0">
               with passion for creating responsive, user-friendly websites. With
               expertise in front-end and back-end development, I deliver
               high-quality work that exceeds client expectations.
             </p>
           </div>
 
-          <button className=" flex-1 mt-5 ml-4 sm:ml-0 py-2 lg:py-3 pl-9 pr-10 bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 rounded-3xl text-2xl ">
+          <button className=" ml-4 mt-5 flex-1 rounded-3xl bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 py-2 pl-9 pr-10 text-2xl sm:ml-0 lg:py-3 ">
             Hire me
           </button>
         </div>
