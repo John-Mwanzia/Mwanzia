@@ -31,7 +31,8 @@ export default function Home() {
     },
   ];
   return (
-    <div className="overflow-x-hidden flex min-h-screen flex-col items-center  ">
+    <div className="overflow-hidden flex min-h-screen flex-col items-center  ">
+      
       <Canvas />
       <NavBar />
        <HeroSection />

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <>
-      <div data-aos="fade-up" className="container">
+      <div data-aos="fade-up" className="px-8 2xl:px-32 overflow-x-hidden container">
         <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
           Projects
         </h1>
