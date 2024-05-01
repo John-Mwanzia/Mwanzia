@@ -31,7 +31,7 @@ export default function About() {
               every pixel and line of code plays a crucial role. Join me in
               creating the next generation of captivating online experiences.
             </p>
-            <button className=" flex-1 py-3 pl-4 pr-4 border-2 ml-4 lg:ml-0 rounded-3xl border-indigo-900 text-2xl font-semibold mt-4">
+            <button className=" flex-1 py-3 pl-4 pr-4 border-2 ml-4 lg:ml-0 rounded-3xl z-30 border-indigo-500 text-2xl font-semibold mt-4">
               Download CV
             </button>
           </div>
