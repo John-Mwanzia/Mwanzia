@@ -10,7 +10,7 @@ import Skills from '@/components/Skills';
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col text-white items-center overflow-hidden ">
-      <Canvas />
+      {/* <Canvas /> */}
       <NavBar />
       <HeroSection />
       <About />
