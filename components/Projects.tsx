@@ -9,7 +9,7 @@ export default function Projects() {
           Projects
         </h1>
         <div className="flex justify-center items-center ">
-          <div className="grid  lg:grid-cols-2  mt-12 space-x-20 space-y-20">
+          <div className="grid  lg:grid-cols-2 gap-32">
             <div>
               <Link href="https://terra-bloom.vercel.app/">
                 <Image

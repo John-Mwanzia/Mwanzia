@@ -8,7 +8,7 @@ export default function About() {
         <h1 className=" text-4xl font-semibold mt-16 lg:mt-8 text-center sm:text-left underline decoration-sky-500">
           About Me
         </h1>
-        <div className="flex flex-col sm:flex-row justify-center mt-8  items-center xl:gap-0 2xl:gap-48">
+        <div className="flex flex-col sm:flex-row justify-center mt-8  items-center gap-16 xl:gap-0 2xl:gap-48">
           <div className="sm:max-w-md  lg:max-w-xl">
             <Image
               data-aos="zoom-in-right"
