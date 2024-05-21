@@ -59,8 +59,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className=" container mb-8 mt-7 overflow-x-hidden px-8 2xl:px-32">
-        <nav className="relative flex items-center justify-between border-b-8 border-red-600  pb-2">
+      <div className=" container mb-8 mt-7 overflow-x-hidden px-8 2xl:px-32  ">
+        <nav className="relative flex items-center justify-between border-b border-[#5E4AD3]/70 z-50 pb-2">
           <div className={` z-50`}>
             <div
               className="flex space-x-4"
@@ -70,7 +70,7 @@ export default function Navbar() {
               <p className="text-3xl  font-bold text-yellow-600 sm:text-4xl">
                 John
               </p>
-              <p className="mr-4  text-3xl font-bold text-red-500 sm:text-4xl">
+              <p className="mr-4  text-3xl font-bold text-[#5E4AD3] sm:text-4xl">
                 Kioko
               </p>
             </div>
