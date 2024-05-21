@@ -1,53 +1,75 @@
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+'use client';
+
+import sendActions from '@/app/actions/sendActions';
+import Image from 'next/image';
+import Link from 'next/link';
+import React, { useRef } from 'react';
+import toast from 'react-hot-toast';
+import SendButton from './SendButton';
 
 export default function Footer() {
+  const ref = useRef<HTMLFormElement>(null);
+  const handleSubmit = async (formData: FormData) => {
+    ref.current!.reset();
+    const name = formData.get('name') as string;
+    const email = formData.get('Email') as string;
+    const message = formData.get('Message') as string;
+
+    const res = await sendActions(name, email, message);
+    if (res.status === 'success') {
+      toast.success(res.message);
+    } else {
+      toast.error(res.message);
+    }
+  };
+
   return (
     <>
       <footer data-aos="fade-up" className="mt-20 w-screen" id="Contact">
-        <h1 className="text-center text-4xl font-semibold  mt-12 mb-10">
+        <h1 className="mb-10 mt-12 text-center  text-4xl font-semibold">
           Contact
         </h1>
-        <div className="flex flex-wrap justify-around pb-8 gap-4 mt-10 bg-blue-900 rounded-tl-3xl rounded-tr-3xl">
+        <div className="mt-10 flex flex-wrap justify-around gap-4 rounded-tl-3xl rounded-tr-3xl bg-blue-900 pb-8">
           <div className="mt-8 px-4">
             <p className="text-6xl font-bold ">Get in touch</p>
-            <form>
-              <div className="flex flex-wrap gap-4 mt-8">
+            <form action={handleSubmit} ref={ref}>
+              <div className="mt-8 flex flex-wrap gap-4">
                 <input
-                  className="rounded-md p-2 outline-none text-black bg-white w-full sm:w-auto"
+                  className="w-full rounded-md bg-white p-2 text-black outline-none sm:w-auto"
                   placeholder="Name..."
                   required
+                  name="name"
                 />
                 <input
-                  className="rounded-md p-2 outline-none text-black bg-white w-full sm:w-auto"
+                  className="w-full rounded-md bg-white p-2 text-black outline-none sm:w-auto"
                   placeholder="Email..."
                   required
+                  type='Email'
+                  name="Email"
                 />
               </div>
               <textarea
                 id="message"
-                className=" mt-4 p-2.5 w-full text-sm rounded-lg outline-none text-black bg-white"
+                className=" mt-4 w-full rounded-lg bg-white p-2.5 text-sm text-black outline-none"
                 placeholder="Your message..."
+                name="Message"
               ></textarea>
-              <button className=" button-color float-right p-2 pr-4 pl-4 mb-6 rounded-lg font-semibold  ">
-                Submit
-              </button>
+              <SendButton />
             </form>
           </div>
 
-          <div className=" flex flex-col  items-center mt-8">
+          <div className=" mt-8 flex  flex-col items-center">
             <p className="text-4xl text-red-500">Quick Access</p>
-            <div className="flex flex-wrap justify-center flex-1  gap-x-4 mt-6">
+            <div className="mt-6 flex flex-1 flex-wrap  justify-center gap-x-4">
               <h3 className="text-xl">Email :</h3>
               <h3 className="text-xl">johnmwanzia277@gmail.com</h3>
             </div>
-            <div className="flex gap-4  flex-wrap flex-1">
+            <div className="flex flex-1  flex-wrap gap-4">
               <h3 className="text-xl">Phone No : </h3>
               <h3 className="text-xl"> 0707979247</h3>
             </div>
           </div>
-          <div className="flex flex-row gap-4 justify-around lg:flex-col  mt-8">
+          <div className="mt-8 flex flex-row justify-around gap-4  lg:flex-col">
             <Link href="https://github.com/John-Mwanzia">
               <Image
                 src="/github-icon.svg"
