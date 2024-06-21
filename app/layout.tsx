@@ -23,9 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <Toaster position="top-center" />
+      </body>
       <Analytics />
-      <Toaster position='top-center' />
     </html>
   );
 }

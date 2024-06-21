@@ -6,6 +6,7 @@ import { Menu } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { animateScroll } from 'react-scroll';
 import { Button } from './ui/button';
+import { Separator } from '@/components/ui/separator';
 
 const links = [
   {
@@ -45,6 +46,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
+    console.log("Initializing AOS...");
     Aos.init({ duration: 2000 });
   }, []);
 
@@ -60,7 +62,7 @@ export default function Navbar() {
   return (
     <>
       <div className=" container mb-8 mt-7 overflow-x-hidden px-8 2xl:px-32  ">
-        <nav className="relative flex items-center justify-between border-b border-[#5E4AD3]/70 z-50 pb-2">
+        <nav className="relative z-50 flex items-center justify-between border-b border-[#5E4AD3]/70 pb-2">
           <div className={` z-50`}>
             <div
               className="flex space-x-4"
@@ -80,7 +82,7 @@ export default function Navbar() {
               <Menu className="" />
             </Button>
           </div>
-
+          {isOpen && <Separator />}
           {isOpen && (
             <div className="fixed left-0 top-0 z-10 h-screen w-full bg-black bg-opacity-95 sm:hidden">
               <div
