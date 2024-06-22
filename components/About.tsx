@@ -1,7 +1,11 @@
+"use client";
 import Image from 'next/image';
 import React from 'react';
 
 export default function About() {
+  const HandleCvDownload = () => {
+    window.open('/John Mwanzia Resume.pdf', '_blank');
+  };
   return (
     <>
       <div
@@ -35,7 +39,7 @@ export default function About() {
               line of code plays a crucial role. Join me in creating the next
               generation of captivating online experiences.
             </p>
-            <button className=" z-30 ml-4 mt-4 flex-1 rounded-3xl border-2 border-indigo-500 py-3 pl-4 pr-4 text-2xl font-semibold lg:ml-0">
+            <button onClick={HandleCvDownload} className=" z-30 ml-4 mt-4 flex-1 rounded-3xl border-2 border-indigo-500 py-3 pl-4 pr-4 text-2xl font-semibold lg:ml-0">
               Download CV
             </button>
           </div>
