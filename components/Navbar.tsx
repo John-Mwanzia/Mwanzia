@@ -46,7 +46,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    console.log("Initializing AOS...");
+    console.log('Initializing AOS...');
     Aos.init({ duration: 2000 });
   }, []);
 
