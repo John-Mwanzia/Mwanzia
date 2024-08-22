@@ -1,6 +1,6 @@
-"use client"
+'use client';
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from 'react';
 
 interface CanvasProps extends React.CanvasHTMLAttributes<HTMLCanvasElement> {}
 
@@ -17,9 +17,9 @@ const Canvas: React.FC<CanvasProps> = (props) => {
     let hue = 0;
 
     function init() {
-      canvas = document.querySelector("#canvas");
+      canvas = document.querySelector('#canvas');
       if (canvas) {
-        ctx = canvas.getContext("2d");
+        ctx = canvas.getContext('2d');
         if (ctx) {
           resizeReset();
           createUnits();
@@ -33,7 +33,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
         w = canvas.width = window.innerWidth;
         h = canvas.height = window.innerHeight;
 
-        ctx.fillStyle = "#222";
+        ctx.fillStyle = '#222';
         ctx.fillRect(0, 0, w, h);
       }
     }
@@ -49,7 +49,7 @@ const Canvas: React.FC<CanvasProps> = (props) => {
 
     function animationLoop() {
       if (ctx) {
-        ctx.fillStyle = "rgba(0, 0, 0, .05)";
+        ctx.fillStyle = 'rgba(0, 0, 0, .05)';
         ctx.fillRect(0, 0, w, h);
 
         drawScene();

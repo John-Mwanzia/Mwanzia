@@ -21,13 +21,13 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className="sm:container relative px-3 sm:px-0   mt-20 flex flex-col justify-center gap-x-16 overflow-hidden  sm:flex-row lg:mt-40 lg:gap-x-20 xl:gap-4 2xl:gap-x-36 2xl:px-32"
+        className="relative mt-20 flex flex-col   justify-center gap-x-16 overflow-hidden px-3 sm:container sm:flex-row  sm:px-0 lg:mt-40 lg:gap-x-20 xl:gap-4 2xl:gap-x-36 2xl:px-32"
         id="Home"
       >
         <div data-aos="flip-right">
           <div>
             <p className=" mb-8 px-4 text-4xl  font-semibold sm:px-0 sm:text-3xl lg:px-0  lg:text-5xl">
-            &lt;Hello /&gt;
+              &lt;Hello /&gt;
             </p>
             <p className=" mb-4 px-4 text-4xl  font-bold sm:px-0 sm:text-4xl lg:px-0 lg:text-5xl">
               <span className="mr-2">I’m a</span>
