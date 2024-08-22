@@ -1,15 +1,18 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Projects() {
   return (
     <>
-      <div data-aos="fade-up" className="px-8 2xl:px-32 overflow-x-hidden container">
-        <h1 className="text-4xl font-semibold mt-10 mb-20 text-center lg:text-left underline decoration-sky-500">
+      <div
+        data-aos="fade-up"
+        className="container overflow-x-hidden px-8 2xl:px-32"
+      >
+        <h1 className="mb-20 mt-10 text-center text-4xl font-semibold underline decoration-sky-500 lg:text-left">
           Projects
         </h1>
-        <div className="flex justify-center items-center ">
-          <div className="grid  lg:grid-cols-2 gap-32">
+        <div className="flex items-center justify-center ">
+          <div className="grid  gap-32 lg:grid-cols-2">
             <div>
               <Link href="https://terra-bloom.vercel.app/">
                 <Image

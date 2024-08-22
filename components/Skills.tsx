@@ -1,16 +1,19 @@
-import Image from "next/image";
-import React from "react";
+import Image from 'next/image';
+import React from 'react';
 
 export default function Skills() {
   return (
     <>
-      <div data-aos="fade-down" className=" mt-8 lg:mt-16 px-8 2xl:px-32 overflow-hidden container">
-        <h1 className="text-4xl font-semibold mt-8 mb-10 text-center lg:text-left underline decoration-sky-500">
+      <div
+        data-aos="fade-down"
+        className=" container mt-8 overflow-hidden px-8 lg:mt-16 2xl:px-32"
+      >
+        <h1 className="mb-10 mt-8 text-center text-4xl font-semibold underline decoration-sky-500 lg:text-left">
           SKILL SET
         </h1>
-        <div className="flex flex-wrap gap-20 lg:gap-48 justify-center items-center">
+        <div className="flex flex-wrap items-center justify-center gap-20 lg:gap-48">
           <div>
-            <h1 className="text-center text-4xl lg:text-5xl mb-8 front-back-color">
+            <h1 className="front-back-color mb-8 text-center text-4xl lg:text-5xl">
               Frontend
             </h1>
             <Image
@@ -23,10 +26,10 @@ export default function Skills() {
             />
           </div>
           <div>
-            <h1 className="text-center mb-10 text-4xl lg:text-5xl front-back-color">
+            <h1 className="front-back-color mb-10 text-center text-4xl lg:text-5xl">
               Backend
             </h1>
-            <div className="flex flex-wrap gap-4 items-center">
+            <div className="flex flex-wrap items-center gap-4">
               <Image
                 data-aos="zoom-in-left"
                 src="/nodejs.svg"
@@ -36,7 +39,7 @@ export default function Skills() {
               />
               <h2>Nodejs</h2>
             </div>
-            <div className="flex flex-wrap gap-4 items-center mt-8 ">
+            <div className="mt-8 flex flex-wrap items-center gap-4 ">
               <Image
                 data-aos="zoom-in-left"
                 src="/mongodb.svg"
@@ -46,7 +49,7 @@ export default function Skills() {
               />
               <h2>Mongodb</h2>
             </div>
-            <div className="flex flex-wrap gap-4 items-center mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Image
                 data-aos="zoom-in-left"
                 src="/mongoose-icon.svg"
@@ -56,7 +59,7 @@ export default function Skills() {
               />
               <h2>Mongoose</h2>
             </div>
-            <div className="flex flex-wrap gap-4 items-center mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/download.png"
@@ -67,7 +70,7 @@ export default function Skills() {
               />
               <h2>PlanetScale</h2>
             </div>
-            <div className="flex flex-wrap gap-4 items-center mt-8">
+            <div className="mt-8 flex flex-wrap items-center gap-4">
               <Image
                 data-aos="zoom-in-left"
                 src="/images/icons8-prisma-orm-48.png"
