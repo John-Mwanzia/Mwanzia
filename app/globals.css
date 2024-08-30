@@ -64,3 +64,18 @@ body {
 .button-color {
   background-color: #c35042;
 }
+
+
+@keyframes pulseShadow {
+  0%,
+  100% {
+    box-shadow: 0 0 15px 4px rgba(93, 76, 191, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 40px 6px rgba(94,74,211, 1);
+  }
+}
+
+.pulse-shadow {
+  animation: pulseShadow 2s infinite;
+}
