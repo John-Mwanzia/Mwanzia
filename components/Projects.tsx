@@ -34,6 +34,26 @@ export default function Projects() {
               </Link>
             </div>
             <div>
+              <Link href="https://clinicalforex.com/">
+                <Image
+                  src="/images/Macbook-Air-www.clinicalforex.com.png"
+                  alt="project-pic-item1"
+                  width={430}
+                  height={350}
+                />
+              </Link>
+            </div>
+            <div>
+              <Link href="/">
+                <Image
+                  src="/images/Macbook-Air-localhost.png"
+                  alt="project-pic-item1"
+                  width={430}
+                  height={350}
+                />
+              </Link>
+            </div>
+            <div>
               <Link href="https://proud-forest-09d2d6e10.3.azurestaticapps.net/">
                 <Image
                   src="/images/mobile1.png"
