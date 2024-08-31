@@ -28,6 +28,28 @@ body {
   height: 100vh;
 }
 
+@supports (-ms-ime-align:auto) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+}
+html::-webkit-scrollbar {
+  width: 0.6rem;
+  position: fixed;
+}
+html::-webkit-scrollbar-track {
+  background-color: rgba(94,74,211, 1);
+  opacity: 0.5;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000;
+  outline: 1px solid rgba(94,74,211, 1);
+  border-radius: 6px;
+  width: 0.1rem !important;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -37,13 +37,24 @@ export default function HeroSection() {
               </span>
             </p>
             <p className=" max-w-xl  px-4 text-base font-semibold sm:px-0 lg:px-0">
-              with passion for creating responsive, user-friendly websites. With
-              expertise in front-end and back-end development, I deliver
-              high-quality work that exceeds client expectations.
+              With a strong foundation in software engineering, I am passionate
+              about building innovative and efficient solutions. My expertise
+              spans across front-end and back-end development, mobile
+              applications, and intuitive UI/UX design. I strive to deliver
+              high-quality work that not only meets but exceeds client
+              expectations.
             </p>
           </div>
 
-          <button className=" ml-4 mt-5 flex-1 rounded-3xl bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 py-2 pl-9 pr-10 text-2xl sm:ml-0 lg:py-3 ">
+          <button
+            onClick={() => {
+              // scroll to the contact section
+              document.getElementById('Contact')!.scrollIntoView({
+                behavior: 'smooth',
+              });
+            }}
+            className=" ml-4 mt-5 flex-1 rounded-3xl bg-gradient-to-r from-blue-400 via-indigo-500 to-purple-600 py-2 pl-9 pr-10 text-2xl sm:ml-0 lg:py-3 "
+          >
             Hire me
           </button>
         </div>

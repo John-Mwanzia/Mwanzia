@@ -4,9 +4,9 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import NavBar from '@/components/Navbar';
 import Projects from '@/components/Projects';
+import {  SkillsSection } from '@/components/SkillSection';
 import ScrollToTop from '@/components/ScrollToTop';
 import Services from '@/components/Services';
-import Skills from '@/components/Skills';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <About />
       <Projects />
       <Services />
-      <Skills />
+      <SkillsSection />
       <Footer />
       <ScrollToTop />
     </div>

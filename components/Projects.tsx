@@ -6,11 +6,16 @@ export default function Projects() {
     <>
       <div
         data-aos="fade-up"
-        className="container overflow-x-hidden px-8 2xl:px-32"
+        className="container overflow-x-hidden mt-16 px-8 2xl:px-32"
       >
-        <h1 className="mb-20 mt-10 text-center text-4xl font-semibold underline decoration-sky-500 lg:text-left">
-          Projects
-        </h1>
+        <h2  className="text-3xl font-medium tracking-tight text-white sm:text-center">
+        My Work in Action
+        </h2>
+        <p className="mt-2 text-lg text-white sm:text-center mb-12">
+          
+            Here are some of the projects I have worked on. Click on any of the
+            images to view the project.
+        </p>
         <div className="flex items-center justify-center ">
           <div className="grid  gap-32 lg:grid-cols-2">
             <div>
