@@ -6,6 +6,9 @@ import Link from 'next/link';
 import React, { useRef } from 'react';
 import toast from 'react-hot-toast';
 import SendButton from './SendButton';
+import { FaGithub } from 'react-icons/fa';
+import { CiLinkedin } from 'react-icons/ci';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export default function Footer() {
   const ref = useRef<HTMLFormElement>(null);
@@ -25,32 +28,36 @@ export default function Footer() {
 
   return (
     <>
-      <footer data-aos="fade-up" className="mt-20 w-screen" id="Contact">
-        <h1 className="mb-10 mt-12 text-center  text-4xl font-semibold">
+      <footer className="container mt-12  " id="Contact">
+        <h1 className="mb-6 mt-12 text-center  text-4xl font-semibold">
           Contact
         </h1>
-        <div className="mt-10 flex flex-wrap justify-around gap-4 rounded-tl-3xl rounded-tr-3xl bg-blue-900 pb-8">
+        <p className="text-lg text-white sm:text-center">
+          Let's Connect and Build Something Great Together
+        </p>
+        <div className="lg:mx-20 border-b-[1px] border-blue-500 py-3 "></div>
+        <div className="relative flex flex-wrap items-start justify-around gap-4   pb-8">
           <div className="mt-8 px-4">
-            <p className="text-6xl font-bold ">Get in touch</p>
+            <p className="text-3xl font-bold ">Get in touch</p>
             <form action={handleSubmit} ref={ref}>
               <div className="mt-8 flex flex-wrap gap-4">
                 <input
-                  className="w-full rounded-md bg-white p-2 text-black outline-none sm:w-auto"
+                  className="w-full  rounded-xl border border-primary bg-transparent p-2 text-white shadow-md shadow-primary outline-none sm:w-auto"
                   placeholder="Name..."
                   required
                   name="name"
                 />
                 <input
-                  className="w-full rounded-md bg-white p-2 text-black outline-none sm:w-auto"
+                  className="w-full  rounded-xl border border-primary bg-transparent p-2 text-white shadow-md shadow-primary outline-none sm:w-auto"
                   placeholder="Email..."
                   required
-                  type='Email'
+                  type="Email"
                   name="Email"
                 />
               </div>
               <textarea
                 id="message"
-                className=" mt-4 w-full rounded-lg bg-white p-2.5 text-sm text-black outline-none"
+                className=" mt-4 w-full  rounded-xl border border-primary bg-transparent p-2.5 text-sm text-white shadow-md shadow-primary outline-none"
                 placeholder="Your message..."
                 name="Message"
               ></textarea>
@@ -58,42 +65,28 @@ export default function Footer() {
             </form>
           </div>
 
-          <div className=" mt-8 flex  flex-col items-center">
-            <p className="text-4xl text-red-500">Quick Access</p>
-            <div className="mt-6 flex flex-1 flex-wrap  justify-center gap-x-4">
-              <h3 className="text-xl">Email :</h3>
-              <h3 className="text-xl">johnmwanzia277@gmail.com</h3>
+          <div className=" mt-8 flex flex-col items-start text-left ">
+            <h2 className="text-xl ">Quick Contact</h2>
+            <div className="mb-4 mt-6">
+              <h3 className="text-blue-500">johnmwanzia277@gmail.com</h3>
             </div>
-            <div className="flex flex-1  flex-wrap gap-4">
-              <h3 className="text-xl">Phone No : </h3>
-              <h3 className="text-xl"> 0707979247</h3>
+            <div className="">
+              <h3 className="text-blue-500"> 0707979247</h3>
             </div>
           </div>
-          <div className="mt-8 flex flex-row justify-around gap-4  lg:flex-col">
-            <Link href="https://github.com/John-Mwanzia">
-              <Image
-                src="/github-icon.svg"
-                width={66}
-                height={57}
-                alt="github icon"
-              />
-            </Link>
-            <Link href="https://twitter.com/John_Mwanzia144">
-              <Image
-                src="/twitter-icon.svg"
-                width={66}
-                height={57}
-                alt="github icon"
-              />
-            </Link>
-            <Link href="">
-              <Image
-                src="/linkedin.svg"
-                width={66}
-                height={57}
-                alt="github icon"
-              />
-            </Link>
+          <div className='text-left'> 
+            <h2 className="mt-8 ">Socials</h2>
+            <div className="mt-4 flex flex-row justify-around gap-4 ">
+              <Link href="https://github.com/John-Mwanzia" target="blank">
+                <FaGithub className="text-3xl text-blue-500" />
+              </Link>
+              <Link href="https://twitter.com/John_Mwanzia144" target="blank">
+                <FaXTwitter className="text-3xl text-blue-500" />
+              </Link>
+              <Link href="">
+                <CiLinkedin className="text-3xl text-blue-500" target="blank" />
+              </Link>
+            </div>
           </div>
         </div>
       </footer>

@@ -11,7 +11,7 @@ export default function SendButton() {
       <Button
         type="submit"
         disabled={pending}
-        className="button-color float-right mb-6 rounded-xl p-2 pl-4 pr-4 font-semibold  shadow-md"
+        className="bg-primary float-right mb-6 mt-3  rounded-xl hover:bg-purple-900 p-2 pl-4 pr-4 font-semibold  shadow-md"
       >
         {pending ? (
           //    center the loader
@@ -19,7 +19,7 @@ export default function SendButton() {
             <Loader className="z-50 h-6 w-6 animate-spin text-white" />
           </div>
         ) : (
-          <span className="font-sans_bold text-lg font-bold">Submit</span>
+          <span className="font-sans_bold text-base font-bold">Submit</span>
         )}
       </Button>
     </div>

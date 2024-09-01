@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Image from 'next/image';
 import React from 'react';
 
@@ -9,8 +9,7 @@ export default function About() {
   return (
     <>
       <div
-        data-aos="fade-right"
-        className="container overflow-x-hidden px-8 2xl:px-32"
+        className="container overflow-hidden px-8 2xl:px-32"
         id="About"
       >
         <h1 className=" mt-16 text-center text-4xl font-semibold underline decoration-sky-500 sm:text-left lg:mt-8">
@@ -19,8 +18,8 @@ export default function About() {
         <div className="mt-8 flex flex-col items-center justify-center  gap-16 sm:flex-row xl:gap-0 2xl:gap-48">
           <div className="sm:max-w-md  lg:max-w-xl">
             <Image
-              data-aos="zoom-in-right"
-              src="/images/mypic.png"
+              data-aos="fade-up"
+              src="/images/about-photo.svg"
               alt="my pic"
               className="sm:w-md lg:max-w-xl"
               width={465}
@@ -30,16 +29,21 @@ export default function About() {
 
           <div>
             <p className="font-semibold  sm:max-w-sm lg:px-0  2xl:max-w-lg ">
-              Im a web developer well-versed in the art of crafting seamless
-              digital experiences. My expertise spans both frontend and backend
-              realms, allowing me to bring holistic and efficient solutions to
-              life. Im committed to building visually stunning interfaces backed
-              by robust technical architecture. My passion lies in transforming
-              ideas into engaging and functional websites, where every pixel and
-              line of code plays a crucial role. Join me in creating the next
-              generation of captivating online experiences.
+              I'm a software engineer with a diverse skill set, encompassing
+              both front-end and back-end development as well as mobile
+              applications and AI-driven solutions. My expertise extends beyond
+              web development, allowing me to tackle complex challenges and
+              deliver comprehensive, high-quality solutions. Whether it's
+              designing intuitive user interfaces, optimizing system
+              performance, or implementing cutting-edge technologies, I'm driven
+              by a passion for innovation and excellence. Let's collaborate to
+              build transformative digital experiences that push the boundaries
+              of what's possible.
             </p>
-            <button onClick={HandleCvDownload} className=" z-30 ml-4 mt-4 flex-1 rounded-3xl border-2 border-indigo-500 py-3 pl-4 pr-4 text-2xl font-semibold lg:ml-0">
+            <button
+              onClick={HandleCvDownload}
+              className=" z-30 ml-4 mt-4 flex-1 rounded-3xl border-2 border-indigo-500 py-3 pl-4 pr-4 text-2xl font-semibold lg:ml-0"
+            >
               Download CV
             </button>
           </div>
