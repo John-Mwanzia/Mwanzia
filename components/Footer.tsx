@@ -25,10 +25,13 @@ export default function Footer() {
 
   return (
     <>
-      <footer data-aos="fade-up" className="mt-20 w-screen" id="Contact">
-        <h1 className="mb-10 mt-12 text-center  text-4xl font-semibold">
+      <footer data-aos="fade-up" className="mt-12 w-screen" id="Contact">
+        <h1 className="mb-6 mt-12 text-center  text-4xl font-semibold">
           Contact
         </h1>
+        <p className="text-lg text-white sm:text-center">
+        Let's Connect and Build Something Great Together
+        </p>
         <div className="mt-10 flex flex-wrap justify-around gap-4 rounded-tl-3xl rounded-tr-3xl bg-blue-900 pb-8">
           <div className="mt-8 px-4">
             <p className="text-6xl font-bold ">Get in touch</p>

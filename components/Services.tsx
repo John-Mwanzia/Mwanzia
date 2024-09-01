@@ -5,7 +5,6 @@ export default function Services() {
   return (
     <>
       <div
-        data-aos="fade-up"
         className="container mb-20 mt-28 overflow-hidden px-8 2xl:px-32"
         id="Services"
       >

@@ -85,6 +85,10 @@ const config = {
             transform: "rotate(-360deg)",
           },
         },
+        marqueeHorizontal: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -96,6 +100,7 @@ const config = {
         "spin-reverse": "spin-reverse 1s linear infinite",
         "spin-reverse-slow": "spin-reverse 4s linear infinite",
         "spin-reverse-slower": "spin-reverse 6s linear infinite",
+        marqueeHorizontal: "marqueeHorizontal 15s linear infinite",
       },
     },
   },

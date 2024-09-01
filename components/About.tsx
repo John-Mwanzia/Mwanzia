@@ -9,7 +9,7 @@ export default function About() {
   return (
     <>
       <div
-        className="container overflow-x-hidden px-8 2xl:px-32"
+        className="container overflow-hidden px-8 2xl:px-32"
         id="About"
       >
         <h1 className=" mt-16 text-center text-4xl font-semibold underline decoration-sky-500 sm:text-left lg:mt-8">
