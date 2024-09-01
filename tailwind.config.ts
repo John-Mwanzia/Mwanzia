@@ -100,7 +100,7 @@ const config = {
         "spin-reverse": "spin-reverse 1s linear infinite",
         "spin-reverse-slow": "spin-reverse 4s linear infinite",
         "spin-reverse-slower": "spin-reverse 6s linear infinite",
-        marqueeHorizontal: "marqueeHorizontal 15s linear infinite",
+        marqueeHorizontal: "marqueeHorizontal 25s linear infinite",
       },
     },
   },

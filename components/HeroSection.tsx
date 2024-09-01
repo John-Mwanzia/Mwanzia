@@ -21,7 +21,7 @@ export default function HeroSection() {
   return (
     <>
       <div
-        className="relative mt-20 flex flex-col   justify-center gap-x-16 overflow-hidden px-3 sm:container sm:flex-row  sm:px-0 lg:mt-40 lg:gap-x-20 xl:gap-4 2xl:gap-x-36 2xl:px-32"
+        className="container relative mt-20 flex flex-col  items-center  justify-center overflow-hidden px-3 sm:flex-row  sm:gap-x-16  sm:px-0 lg:mt-40 lg:gap-x-20 xl:gap-4 2xl:gap-x-36 2xl:px-32"
         id="Home"
       >
         <div data-aos="flip-right">

@@ -13,72 +13,73 @@ export default function Projects() {
         images to view the project.
       </p>
       <div className="relative w-full overflow-hidden">
-        <div className="flex items-center space-x-8 animate-marqueeHorizontal">
-          {/* Repeat each project item twice to create the infinite loop */}
-          {[...Array(2)].map((_, index) => (
-            <React.Fragment key={index}>
-              <div className="flex-none">
-                <Link href="https://terra-bloom.vercel.app/">
-                  <Image
-                    src="/images/Macbook-Air-terra-bloom.vercel.app.png"
-                    alt="project-pic-item1"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-              <div className="flex-none">
-                <Link href="https://study-buddy-ai.vercel.app/">
-                  <Image
-                    src="/images/Macbook-Air-study-buddy-ai.vercel.app.png"
-                    alt="project-pic-item2"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-              <div className="flex-none">
-                <Link href="https://clinicalforex.com/">
-                  <Image
-                    src="/images/Macbook-Air-www.clinicalforex.com.png"
-                    alt="project-pic-item3"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-              <div className="flex-none">
-                <Link href="/">
-                  <Image
-                    src="/images/Macbook-Air-localhost.png"
-                    alt="project-pic-item4"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-              <div className="flex-none">
-                <Link href="https://proud-forest-09d2d6e10.3.azurestaticapps.net/">
-                  <Image
-                    src="/images/mobile1.png"
-                    alt="project-pic-item5"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-              <div className="flex-none">
-                <Link href="https://smart-tech-stores.vercel.app/">
-                  <Image
-                    src="/images/mobile.png"
-                    alt="project-pic-item6"
-                    width={430}
-                    height={350}
-                  />
-                </Link>
-              </div>
-            </React.Fragment>
-          ))}
+        <div className="flex flex-col sm:flex-row space-y-8 items-center space-x-8 sm:animate-marqueeHorizontal">
+         {/* Project item 1 */}
+         <div className="flex-none">
+            <Link href="https://terra-bloom.vercel.app/">
+              <Image
+                src="/images/Macbook-Air-terra-bloom.vercel.app.png"
+                alt="project-pic-item1"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
+          {/* Project item 2 */}
+          <div className="flex-none">
+            <Link href="https://smart-tech-stores.vercel.app/">
+              <Image
+                src="/images/Macbook-Air-study-buddy-ai.vercel.app.png"
+                alt="project-pic-item2"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
+          {/* Project item 3 */}
+          <div className="flex-none">
+            <Link href="https://clinicalforex.com/">
+              <Image
+                src="/images/Macbook-Air-www.clinicalforex.com.png"
+                alt="project-pic-item3"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
+          {/* Project item 4 */}
+          <div className="flex-none">
+            <Link href="/">
+              <Image
+                src="/images/Macbook-Air-localhost.png"
+                alt="project-pic-item4"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
+          {/* Project item 5 */}
+          <div className="flex-none">
+            <Link href="https://proud-forest-09d2d6e10.3.azurestaticapps.net/">
+              <Image
+                src="/images/mobile1.png"
+                alt="project-pic-item5"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
+          {/* Project item 6 */}
+          <div className="flex-none">
+            <Link href="https://smart-tech-stores.vercel.app/">
+              <Image
+                src="/images/mobile.png"
+                alt="project-pic-item6"
+                width={430}
+                height={350}
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

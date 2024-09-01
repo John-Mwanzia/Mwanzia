@@ -62,8 +62,8 @@ export default function Navbar() {
   return (
     <>
       <div className=" container mb-8 mt-7 overflow-x-hidden px-8 2xl:px-32  ">
-        <nav className="relative z-50 flex items-center justify-between border-b border-[#5E4AD3]/70 pb-2">
-          <div className={` z-50`}>
+        <nav className="relative z-50 flex items-center w-full justify-between border-b border-[#5E4AD3]/70 pb-2">
+          <div className={` z-50 `}>
             <div
               className="flex space-x-4"
               data-aos="fade-down"
@@ -77,12 +77,13 @@ export default function Navbar() {
               </p>
             </div>
           </div>
-          <div className="z-50 flex justify-end sm:hidden ">
-            <Button className="bg-yellow-500/30 p-2  " onClick={toggleMenu}>
-              <Menu className="" />
+          {/* ensure the menu remains in the end even when the menu is open */}
+          <div className={`z-50 flex justify-end sm:hidden ${isOpen ? 'fixed right-8' : ''}`}>
+            <Button className="text-blue-500 bg-transparent hover:bg-transparent" onClick={toggleMenu}>
+              <Menu className="text-6xl" />
             </Button>
           </div>
-          {isOpen && <Separator />}
+          {/* {isOpen && <Separator />} */}
           {isOpen && (
             <div className="fixed left-0 top-0 z-10 h-screen w-full bg-black bg-opacity-95 sm:hidden">
               <div
